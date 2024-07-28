@@ -12,9 +12,9 @@
             },
         },
         content: {
-            pretitle: { content: 'Year Round Pest Protection'},
-            title: { content: 'Lorem ipsum sit amet, consectetur adipiscing elit etiam'},
-            body: { content: 'Thorn is a reliable and experienced pest management company with over 15 years of experience in the local community. We offer comprehensive residential and commercial solutions for bugs, rodents, and wildlife.', size: 'lg'},
+            pretitle: { text: 'Year Round Pest Protection'},
+            title: { text: 'Lorem ipsum sit amet, consectetur adipiscing elit etiam'},
+            body: { text: 'Thorn is a reliable and experienced pest management company with over 15 years of experience in the local community. We offer comprehensive residential and commercial solutions for bugs, rodents, and wildlife.', size: 'lg'},
             buttons: [
                 { label: 'Get Pricing Now', destination: '/quote' },
                 { label: 'Call 800-626-1156', destination: '/en/blog' }
@@ -46,18 +46,18 @@
             },
         },
         content: {
-            body: { content: 'Protecting homes and businesses since 2007', size: 'xl'},
+            body: { text: 'Protecting homes and businesses since 2007', size: 'xl'},
         },
         collection: [
             {
               content: {
                 title: {
                   element: 'h2',
-                  content: 'Protect your businesses.',
+                  text: 'Protect your businesses.',
                 },
                 body: {
                   element: 'p',
-                  content: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
+                  text: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
                   size: 'lg'
                 },
                 buttons: [
@@ -85,11 +85,11 @@
               content: {
                 title: {
                   element: 'h2',
-                  content: 'Protect your whole home.',
+                  text: 'Protect your whole home.',
                 },
                 body: {
                   element: 'p',
-                  content: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
+                  text: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
                   size: 'lg'
                 },
                 buttons: [

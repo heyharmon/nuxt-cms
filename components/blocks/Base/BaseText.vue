@@ -1,13 +1,13 @@
 <template>
   <component
-    v-if="content"
+    v-if="text"
     :is="element"
     :class="`
       ${baseClasses} 
       ${sizeClasses[size]}
     `"
   >
-    <slot>{{ content || '' }}</slot>
+    <slot>{{ text || '' }}</slot>
   </component>
 </template>
   
@@ -17,7 +17,7 @@ const props = defineProps({
     type: String,
     default: 'p' // p, span, blockquote
   },
-  content: {
+  text: {
       type: String,
       default: null
   },

@@ -14,7 +14,7 @@
     @keypress="onKeypress"
     ref="editableElement"
   >
-    <slot>{{ content || '' }}</slot>
+    <slot>{{ text || '' }}</slot>
   </component>
 </template>
   
@@ -26,7 +26,7 @@ const props = defineProps({
     type: String,
     default: 'h2' // h1, h2, h3, h4, h5, h6
   },
-  content: {
+  text: {
       type: String,
       default: null
   },

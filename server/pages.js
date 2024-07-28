@@ -26,17 +26,17 @@ export default [
             alignment: 'left',
             pretitle: {
               element: 'p',
-              content: 'This is the pretitle',
+              text: 'This is the pretitle',
               size: 'base',
             },
             title: {
               element: 'h1',
-              content: 'Lorem ipsum dolor sit amet, consectetur.',
+              text: 'Lorem ipsum dolor sit amet, consectetur.',
               size: '4xl',
             },
             body: {
               element: 'p',
-              content: 'We enable builders and developers to create incredible financial products and services for their users',
+              text: 'We enable builders and developers to create incredible financial products and services for their users',
               size: 'lg',
             },
             buttons: [
@@ -89,15 +89,15 @@ export default [
           content: {
             pretitle: {
               element: 'p',
-              content: 'This is the pretitle',
+              text: 'This is the pretitle',
               size: 'base',
             },
             title: {
               element: 'h2',
-              content: 'The about feature',
+              text: 'The about feature',
             },
             body: {
-              content: 'The body content is here. Lorem ipsum dolar sit amit.',
+              text: 'The body content is here. Lorem ipsum dolar sit amit.',
               size: 'lg',
             },
             buttons: [
@@ -150,16 +150,16 @@ export default [
             alignment: 'left',
             pretitle: {
               element: 'p',
-              content: 'This is the pretitle',
+              text: 'This is the pretitle',
               size: 'base',
             },
             title: {
               element: 'h2',
-              content: 'Lorem ipsum dolor sit amet, consectetur.',
+              text: 'Lorem ipsum dolor sit amet, consectetur.',
             },
             body: {
               element: 'p',
-              content: 'We enable builders and developers to create incredible financial products and services for their users',
+              text: 'We enable builders and developers to create incredible financial products and services for their users',
               size: 'lg',
             },
             buttons: [
@@ -207,16 +207,16 @@ export default [
           content: {
             pretitle: {
               element: 'p',
-              content: 'This is the pretitle',
+              text: 'This is the pretitle',
               size: 'base',
             },
             title: {
               element: 'h2',
-              content: 'Stay on top of customer support',
+              text: 'Stay on top of customer support',
             },
             body: {
               size: 'lg',
-              content: 'Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.',
+              text: 'Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.',
             },
             buttons: [],
           },
@@ -224,12 +224,12 @@ export default [
             {
               title: {
                 element: 'p',
-                content: 'Unlimited inboxes',
+                text: 'Unlimited inboxes',
                 size: 'base'
               },
               body: {
                 element: 'p',
-                content: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
               },
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
@@ -238,12 +238,12 @@ export default [
             {
               title: {
                 element: 'p',
-                content: 'Manage team members',
+                text: 'Manage team members',
                 size: 'base'
               },
               body: {
                 element: 'p',
-                content: 'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
+                text: 'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
               },
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
@@ -252,12 +252,12 @@ export default [
             {
               title: {
                 element: 'p',
-                content: 'Spam report',
+                text: 'Spam report',
                 size: 'base'
               },
               body: {
                 element: 'p',
-                content: 'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
+                text: 'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
               },
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
@@ -280,16 +280,16 @@ export default [
           content: {
             pretitle: {
               element: 'p',
-              content: 'This is the pretitle',
+              text: 'This is the pretitle',
               size: 'base',
             },
             title: {
               element: 'h2',
-              content: 'From the blog',
+              text: 'From the blog',
             },
             body: {
               size: 'lg',
-              content: 'Learn how to grow your business with our expert advice.',
+              text: 'Learn how to grow your business with our expert advice.',
             },
             buttons: [],
           },
@@ -298,17 +298,17 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  content: 'This is the pretitle',
+                  text: 'This is the pretitle',
                   size: 'base',
                 },
                 title: {
                   element: 'p',
-                  content: 'Boost your conversion rate',
+                  text: 'Boost your conversion rate',
                   size: 'base'
                 },
                 body: {
                   element: 'p',
-                  content: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
                   { label: 'Learn more', destination: '/' },
@@ -335,17 +335,17 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  content: 'This is the pretitle',
+                  text: 'This is the pretitle',
                   size: 'base',
                 },
                 title: {
                   element: 'p',
-                  content: 'How to use search engines',
+                  text: 'How to use search engines',
                   size: 'base'
                 },
                 body: {
                   element: 'p',
-                  content: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
                   { label: 'Learn more', destination: '/' },
@@ -372,17 +372,17 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  content: 'This is the pretitle',
+                  text: 'This is the pretitle',
                   size: 'base',
                 },
                 title: {
                   element: 'p',
-                  content: 'Improve your customer experience',
+                  text: 'Improve your customer experience',
                   size: 'base'
                 },
                 body: {
                   element: 'p',
-                  content: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
                   { label: 'Learn more', destination: '/' },
@@ -417,18 +417,20 @@ export default [
             theme: 'theme-1',
         },
         content: {
-            body: { content: 'Protecting homes and businesses since 2007', size: 'xl'},
+            body: { 
+              text: 'Protecting homes and businesses since 2007', size: 'xl'
+            },
         },
         collection: [
             {
               content: {
                 title: {
                   element: 'h2',
-                  content: 'Protect your businesses.',
+                  text: 'Protect your businesses.',
                 },
                 body: {
                   element: 'p',
-                  content: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
+                  text: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
                   size: 'lg'
                 },
                 buttons: [
@@ -456,11 +458,11 @@ export default [
               content: {
                 title: {
                   element: 'h2',
-                  content: 'Protect your whole home.',
+                  text: 'Protect your whole home.',
                 },
                 body: {
                   element: 'p',
-                  content: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
+                  text: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
                   size: 'lg'
                 },
                 buttons: [
@@ -505,13 +507,13 @@ export default [
           },
           testimonial: {
             quote: {
-              content: '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+              text: '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
             },
             author: {
-              content: 'Judith Black',
+              text: 'Judith Black',
             },
             extra: {
-              content: 'CEO of Workcation',
+              text: 'CEO of Workcation',
             },
             image: {
               file: {
