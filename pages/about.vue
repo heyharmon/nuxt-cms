@@ -1,6 +1,6 @@
 <template>
     <div>
-      <HeroSplitImage v-bind="{
+      <HeroSplitFull v-bind="{
         wrapper: {
             theme: 'theme-1',
             padding: {
@@ -38,30 +38,19 @@
         }
       }"/>
 
-      <CardBgImageGrid v-bind="{
+      <CardJumboGrid v-bind="{
         wrapper: {
             theme: 'theme-1',
-            // padding: {
-            //     top: '0',
-            //     bottom: '0',
-            // },
             background: {
                 overlay: true,
             },
         },
         content: {
-            // pretitle: { content: 'Protecting homes and businesses since 2007'},
-            // title: { content: 'Lorem ipsum sit amet, consectetur adipiscing elit etiam', element: 'h2'},
             body: { content: 'Protecting homes and businesses since 2007', size: 'xl'},
         },
         collection: [
             {
               content: {
-                // pretitle: {
-                //   element: 'p',
-                //   content: 'This is the pretitle',
-                //   size: 'base',
-                // },
                 title: {
                   element: 'h2',
                   content: 'Protect your businesses.',
@@ -94,11 +83,6 @@
             },
             {
               content: {
-                // pretitle: {
-                //   element: 'p',
-                //   content: 'This is the pretitle',
-                //   size: 'base',
-                // },
                 title: {
                   element: 'h2',
                   content: 'Protect your whole home.',
@@ -135,7 +119,7 @@
   </template>
 
 <script setup>
-import HeroSplitImage from '@/components/blocks/Hero/HeroSplitImage.vue'
+import HeroSplitFull from '@/components/blocks/Hero/HeroSplitFull.vue'
 import CardGrid from '@/components/blocks/Grid/CardGrid.vue'
-import CardBgImageGrid from '@/components/blocks/Grid/CardBgImageGrid.vue'
+import CardJumboGrid from '@/components/blocks/Grid/CardJumboGrid.vue'
 </script>

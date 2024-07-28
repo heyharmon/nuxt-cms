@@ -9,12 +9,12 @@ export default [
       {
         id: 'slsna4l4',
         group: 'Hero',
-        name: 'Hero',
+        name: 'HeroSplitFull',
         data: {
           wrapper: {
             theme: 'theme-1',
             padding: {
-              top: '5xl',
+              top: 'none',
               bottom: '5xl',
             },
             background: {
@@ -72,8 +72,8 @@ export default [
       },
       {
         id: 'akl24jl5l',
-        group: 'Feature',
-        name: 'Feature',
+        group: 'Hero',
+        name: 'HeroSplit',
         data: {
           wrapper: {
             theme: null,
@@ -131,76 +131,18 @@ export default [
         }
       },
       {
-        id: 'akl24jasd',
-        group: 'Feature',
-        name: 'FeatureBig',
+        id: 'slsna4l4',
+        group: 'Hero',
+        name: 'Hero',
         data: {
           wrapper: {
-            theme: null,
+            theme: 'theme-1',
             padding: {
-              top: '6xl',
-              bottom: '6xl',
+              top: '5xl',
+              bottom: '5xl',
             },
             background: {
               overlay: false,
-              image: null,
-            }
-          },
-          content: {
-            pretitle: {
-              element: 'p',
-              content: 'This is the pretitle',
-              size: 'base',
-            },
-            title: {
-              element: 'h2',
-              content: 'The about feature',
-            },
-            body: {
-              content: 'The body content is here. Lorem ipsum dolar sit amit.',
-              size: 'lg',
-            },
-            buttons: [
-              {
-                label: 'Call to action',
-                destination: '/homepage',
-              },
-              {
-                label: 'Learn more',
-                destination: '/page-1',
-                variant: 'ghost',
-              }
-            ],
-            image: {
-              file: {
-                id: 17,
-                name: 'bruno-cervera-ZZqam9DoCoQ-unsplash',
-                filename: '91mfDTPJXeIRfkWlZt0NS3wKfZ652tfyQiZWEj7K.jpg',
-                path: 'acme/91mfDTPJXeIRfkWlZt0NS3wKfZ652tfyQiZWEj7K.jpg',
-                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/91mfDTPJXeIRfkWlZt0NS3wKfZ652tfyQiZWEj7K.jpg',
-                extension: 'jpg',
-                mime: 'image/jpeg',
-                alt: 'The image alt',
-              },
-              width: 600,
-              height: 400,
-            }
-          },
-        }
-      },
-      {
-        id: 'akl24je43',
-        group: 'Feature',
-        name: 'FeatureBoxed',
-        data: {
-          wrapper: {
-            theme: null,
-            padding: {
-              top: '6xl',
-              bottom: '6xl',
-            },
-            background: {
-              overlay: true,
               image: null,
             }
           },
@@ -213,32 +155,43 @@ export default [
             },
             title: {
               element: 'h2',
-              content: 'Boost your productivity.',
+              content: 'Lorem ipsum dolor sit amet, consectetur.',
             },
             body: {
               element: 'p',
-              content: 'Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.',
+              content: 'We enable builders and developers to create incredible financial products and services for their users',
               size: 'lg',
             },
-            buttons: [],
+            buttons: [
+              {
+                label: 'Bold',
+                destination: '/',
+                variant: 'bold',
+              },
+              {
+                label: 'Ghost',
+                destination: '/',
+                variant: 'ghost',
+              },
+            ],
             image: {
               file: {
-                id: 16,
-                name: 'coral-ouellette-lYYDZH9U22I-unsplash',
-                filename: 'KGwPC3jOvdgPpZg1z9okuc2V8Js9GyIQPknqy8L4.jpg',
-                path: 'acme/KGwPC3jOvdgPpZg1z9okuc2V8Js9GyIQPknqy8L4.jpg',
-                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/KGwPC3jOvdgPpZg1z9okuc2V8Js9GyIQPknqy8L4.jpg',
+                id: 20,
+                name: 'camylla-battani-6HMdAij5lfs-unsplash',
+                filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+                path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
                 extension: 'jpg',
                 mime: 'image/jpeg',
                 alt: 'The image alt',
                 description: 'The image description',
                 caption: 'The image caption',
               },
-              width: 600,
-              height: 400,
-            },
+              width: 1280,
+              height: 720,
+            }
           },
-        }
+        },
       },
       {
         id: 'akl24je292',
@@ -281,19 +234,6 @@ export default [
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
               ],
-              // image: {
-              //   overlay: false,
-              //   file: {
-              //     id: 1,
-              //     name: 'The image title',
-              //     src: '/images/icon-camera.svg',
-              //     alt: 'The image alt',
-              //     description: 'The image description',
-              //     caption: 'The image caption',
-              //   },
-              //   width: null,
-              //   height: null,
-              // }
             },
             {
               title: {
@@ -308,19 +248,6 @@ export default [
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
               ],
-              // image: {
-              //   overlay: false,
-              //   file: {
-              //     id: 1,
-              //     name: 'The image title',
-              //     src: '/images/icon-heart.svg',
-              //     alt: 'The image alt',
-              //     description: 'The image description',
-              //     caption: 'The image caption',
-              //   },
-              //   width: null,
-              //   height: null,
-              // }
             },
             {
               title: {
@@ -335,19 +262,6 @@ export default [
               buttons: [
                 { label: 'Learn more', destination: '/', variant: 'text'},
               ],
-              // image: {
-              //   overlay: false,
-              //   file: {
-              //     id: 1,
-              //     name: 'The image title',
-              //     src: '/images/icon-map.svg',
-              //     alt: 'The image alt',
-              //     description: 'The image description',
-              //     caption: 'The image caption',
-              //   },
-              //   width: null,
-              //   height: null,
-              // }
             },
           ]
         }
@@ -491,6 +405,85 @@ export default [
                 }
               }
             },
+          ]
+        }
+      },
+      {
+        id: 'jl23j4ladf',
+        group: 'Grid',
+        name: 'CardJumboGrid',
+        data: {
+          wrapper: {
+            theme: 'theme-1',
+        },
+        content: {
+            body: { content: 'Protecting homes and businesses since 2007', size: 'xl'},
+        },
+        collection: [
+            {
+              content: {
+                title: {
+                  element: 'h2',
+                  content: 'Protect your businesses.',
+                },
+                body: {
+                  element: 'p',
+                  content: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
+                  size: 'lg'
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 14,
+                    name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
+                    filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 400,
+                  height: 300,
+                }
+              }
+            },
+            {
+              content: {
+                title: {
+                  element: 'h2',
+                  content: 'Protect your whole home.',
+                },
+                body: {
+                  element: 'p',
+                  content: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
+                  size: 'lg'
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 13,
+                    name: 'jon-grogan-yfTFo4iaADI-unsplash',
+                    filename: 'kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    path: 'acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 400,
+                  height: 300,
+                }
+              }
+            }
           ]
         }
       },
