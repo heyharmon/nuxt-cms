@@ -14,7 +14,7 @@
       <div class="border-b border-gray-200">
         <nav class="-mb-px flex">
           <button 
-            v-for="tab in ['content', 'style']" :key="tab"
+            v-for="tab in ['content', 'wrapper']" :key="tab"
             @click="activeTab = tab"
             :class="tab === activeTab ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'" 
             class="w-1/2 border-b-2 py-4 px-1 capitalize text-center text-xs font-medium"
@@ -33,7 +33,7 @@
         />
 
         <Field 
-          v-if="activeTab === 'style'"
+          v-if="activeTab === 'wrapper'"
           v-for="(field, index) in fieldsRef.wrapper"
           :key="index"
           v-bind="field"

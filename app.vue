@@ -6,9 +6,9 @@
     </NuxtLayout>
 
     <!-- Setup primary, secondary and accent color css variables -->
-    <component :is="`style`">
-      :root {
-          --primary-50:  {{ primary[50] }};
+    <!-- <component :is="`style`"> -->
+      <!-- :root { -->
+          <!-- --primary-50:  {{ primary[50] }};
           --primary-100: {{ primary[100] }};
           --primary-200: {{ primary[200] }};
           --primary-300: {{ primary[300] }};
@@ -17,9 +17,9 @@
           --primary-600: {{ primary[600] }};
           --primary-700: {{ primary[700] }};
           --primary-800: {{ primary[800] }};
-          --primary-900: {{ primary[900] }};
+          --primary-900: {{ primary[900] }}; -->
 
-          --secondary-50:  {{ secondary[50] }};
+          <!-- --secondary-50:  {{ secondary[50] }};
           --secondary-100: {{ secondary[100] }};
           --secondary-200: {{ secondary[200] }};
           --secondary-300: {{ secondary[300] }};
@@ -28,9 +28,9 @@
           --secondary-600: {{ secondary[600] }};
           --secondary-700: {{ secondary[700] }};
           --secondary-800: {{ secondary[800] }};
-          --secondary-900: {{ secondary[900] }};
+          --secondary-900: {{ secondary[900] }}; -->
 
-          --accent-50:  {{ accent[50] }};
+          <!-- --accent-50:  {{ accent[50] }};
           --accent-100: {{ accent[100] }};
           --accent-200: {{ accent[200] }};
           --accent-300: {{ accent[300] }};
@@ -39,17 +39,11 @@
           --accent-600: {{ accent[600] }};
           --accent-700: {{ accent[700] }};
           --accent-800: {{ accent[800] }};
-          --accent-900: {{ accent[900] }};
-      }
-      </component>
+          --accent-900: {{ accent[900] }}; -->
+      <!-- } -->
+      <!-- </component> -->
 
-      <!-- For each theme, apply the primary, secondary and accent variables to utility variables
-          such as text color, background color, button background color, etc. -->
-      
-      <!-- Is this too much or do we just need enough to theme blocks including header and footer?
-          We should lean heavily on themes. Use these extra variables for specific design traits
-          such as corner roundness? -->
-      <component :is="`style`">
+      <!-- <component :is="`style`">
       :root {
           --heading-h1-color:                var(--gray-900);
           --heading-h2-color:                var(--gray-900);
@@ -78,7 +72,7 @@
           --card-bg-color:                   var(--white);
           --card-bg-color-hover:             var(--gray-100);
       }
-      </component>
+      </component> -->
   </div>
 </template>
 

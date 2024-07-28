@@ -12,7 +12,7 @@ export default [
         name: 'Hero',
         data: {
           wrapper: {
-            theme: 'theme-2',
+            theme: 'theme-1',
             padding: {
               top: '5xl',
               bottom: '5xl',
@@ -31,7 +31,7 @@ export default [
             },
             title: {
               element: 'h1',
-              content: 'Hi. We\'re Cityvet, a different type of vet.',
+              content: 'Lorem ipsum dolor sit amet, consectetur.',
               size: '4xl',
             },
             body: {

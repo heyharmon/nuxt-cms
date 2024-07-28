@@ -8,7 +8,7 @@ const fields = {
     ...baseContentFields,
     ...baseImageFields,
   ],
-  wrapper: [
+  style: [
     ...baseWrapperFields,
   ]
 }
