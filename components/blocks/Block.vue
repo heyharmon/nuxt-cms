@@ -8,11 +8,11 @@
 <script setup lang="ts">
 const props = defineProps({
   group: String,
-  name: String,
+  component: String,
   data: Object,
 })
 
 let component = computed(() => {
-  return defineAsyncComponent(() => import(`~/components/blocks/${props.group}/${props.name}.vue`))
+  return defineAsyncComponent(() => import(`~/components/blocks/${props.group}/${props.component}.vue`))
 })
 </script>

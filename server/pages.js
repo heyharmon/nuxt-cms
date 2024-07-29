@@ -9,7 +9,7 @@ export default [
       {
         id: 'slsna4l4',
         group: 'Hero',
-        name: 'HeroSplitFull',
+        component: 'HeroSplitFull',
         data: {
           styles: {
             theme: 'theme-1',
@@ -72,7 +72,7 @@ export default [
       {
         id: 'akl24jl5l',
         group: 'Hero',
-        name: 'HeroSplit',
+        component: 'HeroSplit',
         data: {
           styles: {
             theme: null,
@@ -132,7 +132,7 @@ export default [
       {
         id: 'slsna4l4',
         group: 'Hero',
-        name: 'Hero',
+        component: 'Hero',
         data: {
           styles: {
             theme: 'theme-1',
@@ -195,7 +195,7 @@ export default [
       {
         id: 'akl24je292',
         group: 'Grid',
-        name: 'FeatureGrid',
+        component: 'FeatureGrid',
         data: {
           styles: {
             background: {
@@ -268,7 +268,7 @@ export default [
       {
         id: 'akl24je22',
         group: 'Grid',
-        name: 'CardGrid',
+        component: 'CardGrid',
         data: {
           styles: {
             background: {
@@ -410,7 +410,7 @@ export default [
       {
         id: 'jl23j4ladf',
         group: 'Grid',
-        name: 'CardJumboGrid',
+        component: 'CardJumboGrid',
         data: {
           styles: {
             theme: 'theme-1',
@@ -491,7 +491,7 @@ export default [
       {
         id: 'ghj24d4re',
         group: 'Testimonial',
-        name: 'Testimonial',
+        component: 'Testimonial',
         data: {
           styles: {
             theme: null,
