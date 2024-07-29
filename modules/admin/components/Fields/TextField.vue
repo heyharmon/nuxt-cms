@@ -2,11 +2,11 @@
   <AppInput 
     :label="label" 
     :modelValue="getValue({
-      object: store.activeBlock.data, 
+      object: editorStore.activeBlock.data, 
       path: path
     })" 
     @update:modelValue="setValue({
-      object: store.activeBlock.data, 
+      object: editorStore.activeBlock.data, 
       path: path, 
       value: $event
     })"
@@ -15,7 +15,6 @@
 
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-// import { getValue, setValue } from '@/modules/admin/utils/arrayUtils'
 import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import AppInput from '@/modules/admin/components/AppInput.vue'
 
@@ -24,6 +23,6 @@ const props = defineProps({
   path: String
 })
 
-const store = useEditorStore()
+const editorStore = useEditorStore()
 </script>
 

@@ -10,17 +10,17 @@ const baseContentFields = [
     },
     {
         label: 'Pretitle',
-        path: 'content.pretitle.content',
+        path: 'content.pretitle.text',
         name: 'TextField',
     },
     {
         label: 'Title',
-        path: 'content.title.content',
+        path: 'content.title.text',
         name: 'TextField',
     },
     {
         label: 'Body',
-        path: 'content.body.content',
+        path: 'content.body.text',
         name: 'TextField',
     },
     {
