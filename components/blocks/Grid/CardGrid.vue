@@ -12,14 +12,7 @@
                     <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div class="max-w-xl pt-10">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <BaseText v-bind="item.content.pretitle" class="text-gray-500" size="sm"/>
-                    </div>
-                    <div class="relative">
-                        <BaseHeading v-bind="item.content.title" class="mt-3"/>
-                        <BaseText v-bind="item.content.body" class="mt-5 line-clamp-3 text-gray-600" />
-                        <BaseButtonRepeater v-if="item.content.buttons.length" :buttons="item.content.buttons" class="mt-8"/>
-                    </div>
+                  <BaseContent v-bind="item.content" class="!mb-0 text-white"/>
                 </div>
             </article>
         </div>

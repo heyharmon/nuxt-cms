@@ -12,10 +12,9 @@ export default [
         component: 'HeroSplitFull',
         data: {
           styles: {
-            theme: 'theme-1',
             padding: {
               top: 'none',
-              bottom: '5xl',
+              bottom: 'none',
             },
             background: {
               overlay: true,
@@ -70,129 +69,6 @@ export default [
         },
       },
       {
-        id: 'akl24jl5l',
-        group: 'Hero',
-        component: 'HeroSplit',
-        data: {
-          styles: {
-            theme: null,
-            padding: {
-              top: '6xl',
-              bottom: '6xl',
-            },
-            background: {
-              overlay: false,
-              image: null,
-            }
-          },
-          content: {
-            pretitle: {
-              element: 'p',
-              text: 'This is the pretitle',
-              size: 'base',
-            },
-            title: {
-              element: 'h2',
-              text: 'The about feature',
-            },
-            body: {
-              text: 'The body content is here. Lorem ipsum dolar sit amit.',
-              size: 'lg',
-            },
-            buttons: [
-              {
-                label: 'Call to action',
-                destination: '/homepage',
-              },
-              {
-                label: 'Learn more',
-                destination: '/page-1',
-                variant: 'ghost',
-              }
-            ],
-            image: {
-              file: {
-                id: 18,
-                name: 'baptist-standaert-mx0DEnfYxic-unsplash',
-                filename: 'pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
-                path: 'acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
-                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
-                extension: 'jpg',
-                mime: 'image/jpeg',
-                alt: 'The image alt',
-                description: 'The image description',
-                caption: 'The image caption',
-              },
-              width: 600,
-              height: 400,
-            }
-          },
-        }
-      },
-      {
-        id: 'slsna4l422gg',
-        group: 'Hero',
-        component: 'Hero',
-        data: {
-          styles: {
-            theme: 'theme-1',
-            padding: {
-              top: '5xl',
-              bottom: '5xl',
-            },
-            background: {
-              overlay: false,
-              image: null,
-            }
-          },
-          content: {
-            alignment: 'left',
-            pretitle: {
-              element: 'p',
-              text: 'This is the pretitle',
-              size: 'base',
-            },
-            title: {
-              element: 'h2',
-              text: 'Lorem ipsum dolor sit amet, consectetur.',
-            },
-            body: {
-              element: 'p',
-              text: 'We enable builders and developers to create incredible financial products and services for their users',
-              size: 'lg',
-            },
-            buttons: [
-              {
-                label: 'Bold',
-                destination: '/',
-                variant: 'bold',
-              },
-              {
-                label: 'Ghost',
-                destination: '/',
-                variant: 'ghost',
-              },
-            ],
-            image: {
-              file: {
-                id: 20,
-                name: 'camylla-battani-6HMdAij5lfs-unsplash',
-                filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-                path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-                extension: 'jpg',
-                mime: 'image/jpeg',
-                alt: 'The image alt',
-                description: 'The image description',
-                caption: 'The image caption',
-              },
-              width: 1280,
-              height: 720,
-            }
-          },
-        },
-      },
-      {
         id: 'akl24je292',
         group: 'Grid',
         component: 'FeatureGrid',
@@ -201,6 +77,10 @@ export default [
             background: {
               overlay: false,
               image: null,
+            },
+            padding: {
+              top: '6xl',
+              bottom: '6xl',
             }
           },
           content: {
@@ -266,6 +146,128 @@ export default [
         }
       },
       {
+        id: 'akl24jl5l',
+        group: 'Hero',
+        component: 'HeroSplit',
+        data: {
+          styles: {
+            theme: null,
+            padding: {
+              top: '6xl',
+              bottom: '6xl',
+            },
+            background: {
+              overlay: true,
+              image: null,
+            }
+          },
+          content: {
+            pretitle: {
+              element: 'p',
+              text: 'This is the pretitle',
+              size: 'base',
+            },
+            title: {
+              element: 'h2',
+              text: 'The about feature',
+            },
+            body: {
+              text: 'The body content is here. Lorem ipsum dolar sit amit.',
+              size: 'lg',
+            },
+            buttons: [
+              {
+                label: 'Call to action',
+                destination: '/homepage',
+              },
+              {
+                label: 'Learn more',
+                destination: '/page-1',
+                variant: 'ghost',
+              }
+            ],
+            image: {
+              file: {
+                id: 18,
+                name: 'baptist-standaert-mx0DEnfYxic-unsplash',
+                filename: 'pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                path: 'acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                extension: 'jpg',
+                mime: 'image/jpeg',
+                alt: 'The image alt',
+                description: 'The image description',
+                caption: 'The image caption',
+              },
+              width: 600,
+              height: 400,
+            }
+          },
+        }
+      },
+      {
+        id: 'slsna4l422gg',
+        group: 'Hero',
+        component: 'Hero',
+        data: {
+          styles: {
+            padding: {
+              top: '6xl',
+              bottom: '6xl',
+            },
+            background: {
+              overlay: false,
+              image: null,
+            }
+          },
+          content: {
+            alignment: 'left',
+            pretitle: {
+              element: 'p',
+              text: 'This is the pretitle',
+              size: 'base',
+            },
+            title: {
+              element: 'h2',
+              text: 'Lorem ipsum dolor sit amet, consectetur.',
+            },
+            body: {
+              element: 'p',
+              text: 'We enable builders and developers to create incredible financial products and services for their users',
+              size: 'lg',
+            },
+            buttons: [
+              {
+                label: 'Bold',
+                destination: '/',
+                variant: 'bold',
+              },
+              {
+                label: 'Ghost',
+                destination: '/',
+                variant: 'ghost',
+              },
+            ],
+            image: {
+              file: {
+                id: 20,
+                name: 'camylla-battani-6HMdAij5lfs-unsplash',
+                filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+                path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+                extension: 'jpg',
+                mime: 'image/jpeg',
+                alt: 'The image alt',
+                description: 'The image description',
+                caption: 'The image caption',
+              },
+              width: 1280,
+              height: 720,
+            }
+          },
+        },
+      },
+      {
         id: 'akl24je22',
         group: 'Grid',
         component: 'CardGrid',
@@ -298,12 +300,12 @@ export default [
                 pretitle: {
                   element: 'p',
                   text: 'This is the pretitle',
-                  size: 'base',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
                   text: 'Boost your conversion rate',
-                  size: 'base'
+                  size: 'lg'
                 },
                 body: {
                   element: 'p',
@@ -335,12 +337,12 @@ export default [
                 pretitle: {
                   element: 'p',
                   text: 'This is the pretitle',
-                  size: 'base',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
                   text: 'How to use search engines',
-                  size: 'base'
+                  size: 'lg'
                 },
                 body: {
                   element: 'p',
@@ -372,12 +374,12 @@ export default [
                 pretitle: {
                   element: 'p',
                   text: 'This is the pretitle',
-                  size: 'base',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
                   text: 'Improve your customer experience',
-                  size: 'base'
+                  size: 'lg'
                 },
                 body: {
                   element: 'p',
@@ -413,8 +415,8 @@ export default [
         component: 'CardJumboGrid',
         data: {
           styles: {
-            theme: 'theme-1',
-        },
+
+          },
         content: {
             body: { 
               text: 'Protecting homes and businesses since 2007', size: 'xl'
@@ -431,7 +433,7 @@ export default [
                 body: {
                   element: 'p',
                   text: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
-                  size: 'lg'
+
                 },
                 buttons: [
                   { label: 'Learn more', destination: '/' },
@@ -449,8 +451,8 @@ export default [
                     description: 'The image description',
                     caption: 'The image caption',
                   },
-                  width: 400,
-                  height: 300,
+                  width: 600,
+                  height: 700,
                 },
               }
             },
@@ -463,26 +465,26 @@ export default [
                 body: {
                   element: 'p',
                   text: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
-                  size: 'lg'
+
                 },
                 buttons: [
                   { label: 'Learn more', destination: '/' },
                 ],
                 image: {
                   file: {
-                    id: 13,
-                    name: 'jon-grogan-yfTFo4iaADI-unsplash',
-                    filename: 'kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-                    path: 'acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    id: 18,
+                    name: 'baptist-standaert-mx0DEnfYxic-unsplash',
+                    filename: 'pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W',
+                    path: 'acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
                     extension: 'jpg',
                     mime: 'image/jpeg',
                     alt: 'The image alt',
                     description: 'The image description',
                     caption: 'The image caption',
                   },
-                  width: 400,
-                  height: 300,
+                  width: 600,
+                  height: 700,
                 }
               }
             }
