@@ -1,7 +1,7 @@
-const baseWrapperFields = [
+const baseStyleFields = [
   {
     label: 'Theme',
-    path: 'wrapper.theme',
+    path: 'styles.theme',
     options: [
       { value: 'theme-1', label: 'Theme 1' },
       { value: 'theme-2', label: 'Theme 2' },
@@ -11,19 +11,19 @@ const baseWrapperFields = [
   },
   {
     label: 'Padding',
-    path: 'wrapper.padding',
+    path: 'styles.padding',
     name: 'PaddingField',
   },
   {
     label: 'Overlay',
-    path: 'wrapper.background.overlay',
+    path: 'styles.background.overlay',
     name: 'SwitchField',
   },
   {
     label: 'Background',
-    path: 'wrapper.background.image',
+    path: 'styles.background.image',
     name: 'ImageField',
   },
 ]
   
-export { baseWrapperFields }
+export { baseStyleFields }

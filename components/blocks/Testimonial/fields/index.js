@@ -1,13 +1,13 @@
 import { baseContentFields } from '@/fields/baseContentFields'
-import { baseWrapperFields } from '@/fields/baseWrapperFields'
+import { baseStyleFields } from '@/fields/baseStyleFields'
 
 const fields = {
   title: 'Testimonial editor',
   content: [
     ...baseContentFields,
   ],
-  wrapper: [
-    ...baseWrapperFields,
+  styles: [
+    ...baseStyleFields,
   ]
 }
 

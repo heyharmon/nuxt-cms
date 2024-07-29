@@ -1,6 +1,6 @@
 import { baseContentFields } from '@/fields/baseContentFields'
 import { baseImageFields } from '@/fields/baseImageFields'
-import { baseWrapperFields } from '@/fields/baseWrapperFields'
+import { baseStyleFields } from '@/fields/baseStyleFields'
 
 const fields = {
   title: 'Hero editor',
@@ -8,8 +8,8 @@ const fields = {
     ...baseContentFields,
     ...baseImageFields,
   ],
-  wrapper: [
-    ...baseWrapperFields,
+  styles: [
+    ...baseStyleFields,
   ]
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <BaseWrapper v-bind="wrapper">
+  <BaseWrapper v-bind="styles">
     <!-- Wrapper -->
     <div class="mx-auto max-w-7xl px-8">
 
@@ -33,7 +33,7 @@
 
 <script setup>
 const props = defineProps({
-  wrapper: Object,
+  styles: Object,
   content: Object,
   collection: Array,
 })

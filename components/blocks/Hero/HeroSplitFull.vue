@@ -1,5 +1,5 @@
 <template>
-  <BaseWrapper v-bind="wrapper">
+  <BaseWrapper v-bind="styles">
     <!-- Image wrapper -->
     <div class="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:right-0 md:h-full md:w-1/3 lg:w-1/2">
       <BaseImage v-if="content.image" v-bind="content.image" class="h-full w-full"/>
@@ -16,7 +16,7 @@
 
 <script setup>
 const props = defineProps({
-  wrapper: Object,
+  styles: Object,
   content: Object,
   // content: {
   //   type: Object,

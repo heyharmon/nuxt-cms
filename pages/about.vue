@@ -1,7 +1,7 @@
 <template>
     <div>
       <HeroSplitFull v-bind="{
-        wrapper: {
+        styles: {
             theme: 'theme-1',
             padding: {
                 top: '0',
@@ -39,7 +39,7 @@
       }"/>
 
       <CardJumboGrid v-bind="{
-        wrapper: {
+        styles: {
             theme: 'theme-1',
             background: {
                 overlay: true,

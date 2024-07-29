@@ -11,7 +11,7 @@ export default [
         group: 'Hero',
         name: 'HeroSplitFull',
         data: {
-          wrapper: {
+          styles: {
             theme: 'theme-1',
             padding: {
               top: 'none',
@@ -23,7 +23,6 @@ export default [
             }
           },
           content: {
-            alignment: 'left',
             pretitle: {
               element: 'p',
               text: 'This is the pretitle',
@@ -75,7 +74,7 @@ export default [
         group: 'Hero',
         name: 'HeroSplit',
         data: {
-          wrapper: {
+          styles: {
             theme: null,
             padding: {
               top: '6xl',
@@ -135,7 +134,7 @@ export default [
         group: 'Hero',
         name: 'Hero',
         data: {
-          wrapper: {
+          styles: {
             theme: 'theme-1',
             padding: {
               top: '5xl',
@@ -198,7 +197,7 @@ export default [
         group: 'Grid',
         name: 'FeatureGrid',
         data: {
-          wrapper: {
+          styles: {
             background: {
               overlay: false,
               image: null,
@@ -271,7 +270,7 @@ export default [
         group: 'Grid',
         name: 'CardGrid',
         data: {
-          wrapper: {
+          styles: {
             background: {
               overlay: true,
               image: null,
@@ -413,7 +412,7 @@ export default [
         group: 'Grid',
         name: 'CardJumboGrid',
         data: {
-          wrapper: {
+          styles: {
             theme: 'theme-1',
         },
         content: {
@@ -494,7 +493,7 @@ export default [
         group: 'Testimonial',
         name: 'Testimonial',
         data: {
-          wrapper: {
+          styles: {
             theme: null,
             padding: {
               top: '5xl',
