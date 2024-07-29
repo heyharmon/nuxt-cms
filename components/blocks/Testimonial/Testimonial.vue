@@ -1,10 +1,11 @@
 <template>
   <BaseWrapper v-bind="styles">
-    <!-- Wrapper -->
+    <!-- Content wrapper -->
     <div class="mx-auto max-w-7xl px-8">
+      <BaseContent v-bind="content" class="mb-8 sm:mb-12 lg:mb-14"/>
 
-      <!-- Container -->
-      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+      <!-- Testimonial wrapper -->
+      <div class="mx-auto max-w-2xl px-8 lg:max-w-4xl">
         <!-- Stars -->
         <div class="flex justify-center gap-x-1 text-indigo-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 flex-none">
@@ -24,7 +25,7 @@
           </svg>
         </div>
 
-        <!-- Content -->
+        <!-- Testimonial -->
         <figure class="mt-10">
           <BaseText v-bind="testimonial.quote" as="blockquote" size="2xl" class="text-center font-semibold" />
           <figcaption class="mt-10">
@@ -47,6 +48,7 @@
 <script setup lang="ts">
 const props = defineProps({
   styles: Object,
+  content: Object,
   testimonial: {
     type: Object,
     default: () => ({

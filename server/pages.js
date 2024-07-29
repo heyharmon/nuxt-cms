@@ -18,7 +18,7 @@ export default [
               bottom: '5xl',
             },
             background: {
-              overlay: false,
+              overlay: true,
               image: null,
             }
           },
@@ -130,7 +130,7 @@ export default [
         }
       },
       {
-        id: 'slsna4l4',
+        id: 'slsna4l422gg',
         group: 'Hero',
         component: 'Hero',
         data: {
@@ -419,6 +419,7 @@ export default [
             body: { 
               text: 'Protecting homes and businesses since 2007', size: 'xl'
             },
+            buttons: [],
         },
         collection: [
             {
@@ -450,7 +451,7 @@ export default [
                   },
                   width: 400,
                   height: 300,
-                }
+                },
               }
             },
             {
@@ -503,6 +504,10 @@ export default [
               overlay: true,
               image: null,
             }
+          },
+          content: {
+            alignment: 'center',
+            buttons: [],
           },
           testimonial: {
             quote: {

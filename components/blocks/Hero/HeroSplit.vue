@@ -1,9 +1,9 @@
 <template>
   <BaseWrapper v-bind="styles">
-    <!-- Wrapper -->
+    <!-- Content wrapper -->
     <div class="mx-auto max-w-7xl px-8">
 
-      <!-- Container -->
+      <!-- Hero wrapper -->
       <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2">
 
         <!-- Content -->

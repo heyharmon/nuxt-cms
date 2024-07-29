@@ -1,16 +1,11 @@
 <template>
   <BaseWrapper v-bind="styles">
-    <!-- Wrapper -->
+    <!-- Content wrapper -->
     <div class="mx-auto max-w-7xl px-8">
-
-      <!-- Container -->
-      <div class="max-w-2xl">
-        <!-- Content -->
-        <BaseContent v-bind="content"/>
-      </div>
+      <BaseContent v-bind="content" class="mb-8 sm:mb-12 lg:mb-14"/>
       
       <!-- Features -->
-      <div class="mx-auto mt-8 max-w-2xl sm:mt-12 lg:mt-14 lg:max-w-none">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-12 gap-y-16 lg:max-w-none lg:grid-cols-3">
           <div v-for="(feature, index) in collection" class="flex flex-col">
             <dt class="text-base font-semibold leading-7 text-gray-900">

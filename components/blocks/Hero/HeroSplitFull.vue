@@ -8,7 +8,7 @@
     <!-- Content wrapper -->
     <div class="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
       <div class="pl-6 pr-6 md:mr-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pr-24 lg:pl-0">
-        <BaseContent v-bind="content" />
+        <BaseContent v-bind="content"/>
       </div>
     </div>
   </BaseWrapper>

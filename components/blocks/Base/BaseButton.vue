@@ -39,6 +39,7 @@ const props = defineProps({
 })
 
 const baseClasses = `
+  inline-flex
   font-semibold 
   rounded-md
   active:translate-y-px
