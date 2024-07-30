@@ -2,7 +2,7 @@ import { baseContentFields } from '@/fields/baseContentFields'
 import { baseStyleFields } from '@/fields/baseStyleFields'
 
 const fields = {
-  title: 'Grid editor',
+  title: 'Repeater editor',
   content: [
     ...baseContentFields,
   ],

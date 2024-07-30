@@ -122,4 +122,4 @@
 import HeroSplitFull from '@/components/blocks/Hero/HeroSplitFull.vue'
 import CardGrid from '@/components/blocks/Grid/CardGrid.vue'
 import CardJumboGrid from '@/components/blocks/Grid/CardJumboGrid.vue'
-</script>
+</script>~/components/blocks/Repeater/CardGrid.vue~/components/blocks/Repeater/CardJumboGrid.vue

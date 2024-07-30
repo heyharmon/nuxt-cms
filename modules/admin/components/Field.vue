@@ -12,7 +12,7 @@
 const props = defineProps({
   label: String,
   path: String,
-  name: String,
+  name: String, // TODO: Rename to FieldComponent or Field
   options: Object,
 })
 

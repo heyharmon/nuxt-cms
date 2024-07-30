@@ -40,20 +40,20 @@ export const useEditorStore = defineStore('editor', {
       this.blocks = page.blocks
     },
 
-    getValue(path) {
+    getValue(path) { // TODO: Rename to get getBlockData, so where it's used it's clear what it's getting
       console.log('Path: ', path)
       
       return get(this.activeBlock.data, path)
     },
 
-    setValue(path, value) {
+    setValue(path, value) { // TODO: Rename to get setBlockData, so where it's used it's clear what it's getting
       console.log('Path: ', path)
       console.log('Value: ', value)
 
       set(this.activeBlock.data, path, value)
     },
 
-    pushToArray({path, value}) {
+    pushToArray({path, value}) { // TODO: Rename to get pushToBlockDataArray, so where it's used it's clear what it's getting
       console.log('Path: ', path)
       console.log('Value: ', value)
 
