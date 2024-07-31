@@ -2,10 +2,10 @@
   <div class="margin-bottom-sm">
     <label v-if="label" class="block text-sm font-medium leading-6 text-gray-900" :for="label">{{ label }}</label>
     
-    <div v-if="blockColumns && blockColumns.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
+    <div v-if="repeater && repeater.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
       <!-- Draggable list of items -->
       <div 
-        v-for="(column, index) in blockColumns"
+        v-for="(item, index) in repeater"
         @click="open = true" 
         class="group border-b border-gray-300 last:border-0 cursor-pointer hover:bg-gray-50 px-2 py-3"
       >
@@ -22,7 +22,7 @@
         <Field 
           v-for="field in fields"
           :label="field.label"
-          :path="`columns[${index}][${field.path}]`"
+          :path="`repeater[${index}][${field.path}]`"
           :name="field.name"
         />
       </div>
@@ -56,7 +56,7 @@ const props = defineProps({
 const open = ref(false)
 
 const editorStore = useEditorStore()
-const blockColumns = editorStore.getValue(props.path)
+const repeater = editorStore.getValue(props.path)
 
 function addNewItem() {  
   repeater.push({ 

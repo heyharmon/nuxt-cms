@@ -3,7 +3,7 @@ import { baseStyleFields } from '@/fields/baseStyleFields'
 import { baseContentRepeaterFields } from '~/fields/baseContentRepeaterFields'
 
 const fields = {
-  title: 'Text columns editor',
+  title: 'Content repeater',
   groups: [
     {
       title: 'columns',
