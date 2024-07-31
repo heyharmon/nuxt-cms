@@ -1,6 +1,6 @@
 import { baseContentFields } from '@/fields/baseContentFields'
+import { baseImageFields } from '@/fields/baseImageFields'
 import { baseStyleFields } from '@/fields/baseStyleFields'
-import { baseContentRepeaterFields } from '~/fields/baseContentRepeaterFields'
 
 const fields = {
   title: 'Content repeater',
@@ -8,13 +8,12 @@ const fields = {
     {
       title: 'columns',
       fields: [
-        // baseContentRepeaterFields,
         {
           label: 'Content repeater',
           path: 'collection',
-          name: 'ContentRepeaterField', // TODO: Rename to Component
+          name: 'ContentRepeaterField', // TODO: Rename to Component // TODO: Can I rename to RepeaterField or FieldRepeater?
           fields: [
-              ...baseContentFields
+              ...baseContentFields,
           ],
       }
       ]

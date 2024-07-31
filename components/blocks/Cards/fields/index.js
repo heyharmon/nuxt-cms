@@ -1,50 +1,37 @@
 import { baseContentFields } from '@/fields/baseContentFields'
+import { baseImageFields } from '@/fields/baseImageFields'
 import { baseStyleFields } from '@/fields/baseStyleFields'
 
 const fields = {
   title: 'Cards editor',
-  content: [
-    ...baseContentFields,
+  groups: [
     {
-      label: 'Cards',
-      path: 'cards',
-      name: 'RepeaterField',
-      repeats: [
+      title: 'cards',
+      fields: [
         {
-          label: 'Alignment',
-          path: 'content.alignment',
-          options: [
-              { value: 'left', label: 'Left' },
-              { value: 'center', label: 'Center' },
+          label: 'Cards',
+          path: 'collection',
+          name: 'ContentRepeaterField',  // TODO: Rename to Component // TODO: Can I rename to RepeaterField or FieldRepeater?
+          fields: [
+              ...baseContentFields,
+              ...baseImageFields,
           ],
-          name: 'SelectButtonsField',
-        },
-        {
-            label: 'Pretitle',
-            path: 'content.pretitle.text',
-            name: 'TextField',
-        },
-        {
-            label: 'Title',
-            path: 'content.title.text',
-            name: 'TextField',
-        },
-        {
-            label: 'Body',
-            path: 'content.body.text',
-            name: 'TextField',
-        },
-        {
-            label: 'Buttons',
-            path: 'content.buttons',
-            name: 'ButtonRepeaterField',
-        },
+      }
       ]
     },
+    {
+      title: 'content',
+      fields: [
+        ...baseContentFields,
+      ]
+    },
+    {
+      title: 'style',
+      fields: [
+        ...baseStyleFields,
+      ]
+    }
   ],
-  styles: [
-    ...baseStyleFields,
-  ]
 }
 
 export { fields }

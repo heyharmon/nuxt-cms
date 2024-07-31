@@ -7,7 +7,7 @@ export default [
     path: '/',
     blocks: [
       {
-        id: 'akl24je292',
+        id: 'akl24je22',
         group: 'ContentRepeater',
         component: 'ContentRepeater',
         data: {
@@ -16,20 +16,20 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  text: 'The first column pretitle',
-                  size: 'base',
+                  text: 'This is the pretitle',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
-                  text: 'The first column title',
-                  size: 'lg',
+                  text: 'Boost your conversion rate',
+                  size: 'lg'
                 },
                 body: {
-                  text: 'The first column body',
-                  size: 'base',
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
-                  { label: 'First column button', destination: '/'},
+                  { label: 'Learn more', destination: '/' },
                 ],
               }
             },
@@ -37,20 +37,20 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  text: 'The second column pretitle',
-                  size: 'base',
+                  text: 'This is the pretitle',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
-                  text: 'The second column title',
-                  size: 'lg',
+                  text: 'How to use search engines',
+                  size: 'lg'
                 },
                 body: {
-                  text: 'The second column body',
-                  size: 'base',
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
-                  { label: 'Second column button', destination: '/'},
+                  { label: 'Learn more', destination: '/' },
                 ],
               }
             },
@@ -58,34 +58,24 @@ export default [
               content: {
                 pretitle: {
                   element: 'p',
-                  text: 'The third column pretitle',
-                  size: 'base',
+                  text: 'This is the pretitle',
+                  size: 'sm',
                 },
                 title: {
                   element: 'p',
-                  text: 'The third column title',
-                  size: 'lg',
+                  text: 'Improve your customer experience',
+                  size: 'lg'
                 },
                 body: {
-                  text: 'The third column body',
-                  size: 'base',
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
                 },
                 buttons: [
-                  { label: 'Third column button', destination: '/'},
+                  { label: 'Learn more', destination: '/' },
                 ],
               }
-            }
+            },
           ],
-          styles: {
-            background: {
-              overlay: false,
-              image: null,
-            },
-            padding: {
-              top: '6xl',
-              bottom: '6xl',
-            }
-          },
           content: {
             pretitle: {
               element: 'p',
@@ -94,382 +84,244 @@ export default [
             },
             title: {
               element: 'h2',
-              text: 'Stay on top of customer support',
+              text: 'From the blog',
             },
             body: {
               size: 'lg',
-              text: 'Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.',
+              text: 'Learn how to grow your business with our expert advice.',
             },
             buttons: [],
           },
+          styles: {
+            background: {
+              overlay: true,
+              image: null,
+            }
+          }
         }
       }, // ContentRepeater
-      // {
-      //   id: 'akl24je22',
-      //   group: 'ContentRepeater',
-      //   component: 'ContentRepeaterCards',
-      //   data: {
-      //     styles: {
-      //       background: {
-      //         overlay: true,
-      //         image: null,
-      //       }
-      //     },
-      //     content: {
-      //       pretitle: {
-      //         element: 'p',
-      //         text: 'This is the pretitle',
-      //         size: 'base',
-      //       },
-      //       title: {
-      //         element: 'h2',
-      //         text: 'From the blog',
-      //       },
-      //       body: {
-      //         size: 'lg',
-      //         text: 'Learn how to grow your business with our expert advice.',
-      //       },
-      //       buttons: [],
-      //     },
-      //     cards: [
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'Boost your conversion rate',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 14,
-      //               name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
-      //               filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'How to use search engines',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 13,
-      //               name: 'jon-grogan-yfTFo4iaADI-unsplash',
-      //               filename: 'kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               path: 'acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'Improve your customer experience',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 12,
-      //               name: 'nathan-hanna-7hxC83Qcuwo-unsplash',
-      //               filename: 'tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               path: 'acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //     ]
-      //   }
-      // }, // ContentRepeaterCards
-      // {
-      //   id: 'akl24je22',
-      //   group: 'Cards',
-      //   component: 'Cards',
-      //   data: {
-      //     styles: {
-      //       background: {
-      //         overlay: true,
-      //         image: null,
-      //       }
-      //     },
-      //     content: {
-      //       pretitle: {
-      //         element: 'p',
-      //         text: 'This is the pretitle',
-      //         size: 'base',
-      //       },
-      //       title: {
-      //         element: 'h2',
-      //         text: 'From the blog',
-      //       },
-      //       body: {
-      //         size: 'lg',
-      //         text: 'Learn how to grow your business with our expert advice.',
-      //       },
-      //       buttons: [],
-      //     },
-      //     cards: [
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'Boost your conversion rate',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 14,
-      //               name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
-      //               filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'How to use search engines',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 13,
-      //               name: 'jon-grogan-yfTFo4iaADI-unsplash',
-      //               filename: 'kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               path: 'acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //       {
-      //         content: {
-      //           pretitle: {
-      //             element: 'p',
-      //             text: 'This is the pretitle',
-      //             size: 'sm',
-      //           },
-      //           title: {
-      //             element: 'p',
-      //             text: 'Improve your customer experience',
-      //             size: 'lg'
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 12,
-      //               name: 'nathan-hanna-7hxC83Qcuwo-unsplash',
-      //               filename: 'tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               path: 'acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 400,
-      //             height: 300,
-      //           }
-      //         }
-      //       },
-      //     ]
-      //   }
-      // }, // Cards
-      // {
-      //   id: 'jl23j4ladf',
-      //   group: 'Grid',
-      //   component: 'CardJumboGrid',
-      //   data: {
-      //     styles: {
+      {
+        id: 'akl24je345',
+        group: 'Cards',
+        component: 'Cards',
+        data: {
+          collection: [
+            {
+              content: {
+                pretitle: {
+                  element: 'p',
+                  text: 'This is the pretitle',
+                  size: 'sm',
+                },
+                title: {
+                  element: 'p',
+                  text: 'Boost your conversion rate',
+                  size: 'lg'
+                },
+                body: {
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 14,
+                    name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
+                    filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 400,
+                  height: 300,
+                }
+              }
+            },
+            {
+              content: {
+                pretitle: {
+                  element: 'p',
+                  text: 'This is the pretitle',
+                  size: 'sm',
+                },
+                title: {
+                  element: 'p',
+                  text: 'How to use search engines',
+                  size: 'lg'
+                },
+                body: {
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 13,
+                    name: 'jon-grogan-yfTFo4iaADI-unsplash',
+                    filename: 'kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    path: 'acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kGRz9gB96QT8aGzK2OH5xp3xMyL0Ys5Budk8COQz.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 400,
+                  height: 300,
+                }
+              }
+            },
+            {
+              content: {
+                pretitle: {
+                  element: 'p',
+                  text: 'This is the pretitle',
+                  size: 'sm',
+                },
+                title: {
+                  element: 'p',
+                  text: 'Improve your customer experience',
+                  size: 'lg'
+                },
+                body: {
+                  element: 'p',
+                  text: 'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 12,
+                    name: 'nathan-hanna-7hxC83Qcuwo-unsplash',
+                    filename: 'tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
+                    path: 'acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/tOlbFKkUonJRthYeMkTyE9rfiemmnSEQ75r1T7sM.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 400,
+                  height: 300,
+                }
+              }
+            },
+          ],
+          content: {
+            pretitle: {
+              element: 'p',
+              text: 'This is the pretitle',
+              size: 'base',
+            },
+            title: {
+              element: 'h2',
+              text: 'From the blog',
+            },
+            body: {
+              size: 'lg',
+              text: 'Learn how to grow your business with our expert advice.',
+            },
+            buttons: [],
+          },
+          styles: {
+            background: {
+              overlay: true,
+              image: null,
+            }
+          },
+        }
+      }, // Cards
+      {
+        id: 'jl23j4ladf',
+        group: 'Cards',
+        component: 'CardsJumbo',
+        data: {
+        collection: [
+            {
+              content: {
+                title: {
+                  element: 'h2',
+                  text: 'Protect your businesses.',
+                },
+                body: {
+                  element: 'p',
+                  text: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
 
-      //     },
-      //   content: {
-      //       body: { 
-      //         text: 'Protecting homes and businesses since 2007', size: 'xl'
-      //       },
-      //       buttons: [],
-      //   },
-      //   collection: [
-      //       {
-      //         content: {
-      //           title: {
-      //             element: 'h2',
-      //             text: 'Protect your businesses.',
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Get detailed commercial pest control services from Thorn to protect your products and reputation. Our comprehensive approach includes thorough inspections, customized treatment plans, and ongoing monitoring.',
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 14,
+                    name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
+                    filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 600,
+                  height: 700,
+                },
+              }
+            },
+            {
+              content: {
+                title: {
+                  element: 'h2',
+                  text: 'Protect your whole home.',
+                },
+                body: {
+                  element: 'p',
+                  text: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
 
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 14,
-      //               name: 'humphrey-muleba-mmqPwkaTGCs-unsplash',
-      //               filename: 'kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               path: 'acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/kDRBPSsJBUrDJMapdh0FhTJNB7T88TUssgomXE68.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 600,
-      //             height: 700,
-      //           },
-      //         }
-      //       },
-      //       {
-      //         content: {
-      //           title: {
-      //             element: 'h2',
-      //             text: 'Protect your whole home.',
-      //           },
-      //           body: {
-      //             element: 'p',
-      //             text: 'Keep your home safe and pest-free with Thorn’s thorough and customized residential pest control services. Our team uses biology-based methods to identify, address, and prevent pest issues, ensuring long-term protection.',
-
-      //           },
-      //           buttons: [
-      //             { label: 'Learn more', destination: '/' },
-      //           ],
-      //           image: {
-      //             file: {
-      //               id: 18,
-      //               name: 'baptist-standaert-mx0DEnfYxic-unsplash',
-      //               filename: 'pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W',
-      //               path: 'acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
-      //               url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
-      //               extension: 'jpg',
-      //               mime: 'image/jpeg',
-      //               alt: 'The image alt',
-      //               description: 'The image description',
-      //               caption: 'The image caption',
-      //             },
-      //             width: 600,
-      //             height: 700,
-      //           }
-      //         }
-      //       }
-      //     ]
-      //   }
-      // }, // CardJumboGrid
+                },
+                buttons: [
+                  { label: 'Learn more', destination: '/' },
+                ],
+                image: {
+                  file: {
+                    id: 18,
+                    name: 'baptist-standaert-mx0DEnfYxic-unsplash',
+                    filename: 'pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W',
+                    path: 'acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                    url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/pP3ic6RPEqcb8Sqxq0ZO8kL3vgkGsNaCRp16oo7W.jpg',
+                    extension: 'jpg',
+                    mime: 'image/jpeg',
+                    alt: 'The image alt',
+                    description: 'The image description',
+                    caption: 'The image caption',
+                  },
+                  width: 600,
+                  height: 700,
+                }
+              }
+            }
+        ],
+        content: {
+          body: { 
+            text: 'Protecting homes and businesses since 2007', size: 'xl'
+          },
+          buttons: [],
+        },
+        styles: {}
+        }
+      }, // CardsJumbo
       // {
       //   id: 'slsna4l422gg',
       //   group: 'Hero',
