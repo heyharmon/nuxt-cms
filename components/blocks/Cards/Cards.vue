@@ -11,7 +11,7 @@
                   <span class="text-primary-600">{{ index + 1 }}</span>
                 </div> -->
                 <div class="relative w-full">
-                    <BaseImage v-bind="item.content.image" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"/>
+                    <BaseImage v-bind="item.image" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"/>
                     <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div class="max-w-xl pt-10">
