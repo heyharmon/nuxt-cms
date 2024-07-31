@@ -19,13 +19,6 @@ const fields = {
       ]
     }
   ],
-  // content: [
-  //   ...baseContentFields,
-  //   ...baseImageFields,
-  // ],
-  // styles: [
-  //   ...baseStyleFields,
-  // ]
 }
 
 export { fields }

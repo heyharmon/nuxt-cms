@@ -1,5 +1,5 @@
 const baseContentFields = [
-    { // TODO: Move Alignment to baseStyleFields and apply alignment to whole block
+    {
         label: 'Alignment',
         path: 'content.alignment',
         options: [

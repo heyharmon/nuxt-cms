@@ -15,7 +15,7 @@ import { PaddingTop, PaddingBottom } from '@/dictionaries/Padding.js'
 const props = defineProps({
   theme: {
     type: String,
-    default: null,
+    default: null, // Options: theme-1, theme-2, theme-3
   },
   padding: {
     type: Object,
@@ -24,6 +24,6 @@ const props = defineProps({
       bottom: '6xl',
     }),
   },
-  background: Object,
+  background: Object, // File: Image, video
 })
 </script>
