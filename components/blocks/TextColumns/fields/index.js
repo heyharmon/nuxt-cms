@@ -24,12 +24,6 @@ const fields = {
       ]
     }
   ],
-  // content: [
-  //   ...baseContentFields,
-  // ],
-  // styles: [
-  //   ...baseStyleFields,
-  // ]
 }
 
 export { fields }

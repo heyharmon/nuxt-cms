@@ -16,7 +16,7 @@
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
 import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
-import AppInput from '@/modules/admin/components/AppInput.vue'
+import AppInput from '@/modules/admin/components/App/AppInput.vue'
 
 const props = defineProps({
   label: String,

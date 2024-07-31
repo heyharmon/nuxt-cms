@@ -39,8 +39,6 @@ const editorStore = useEditorStore()
 const image = computed(() => {
   return editorStore.getValue(props.path)
 })
-
-console.log(image.value)
  
 function removeImage() {
   editorStore.setValue(props.path, null)

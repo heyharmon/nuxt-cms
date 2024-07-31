@@ -42,8 +42,8 @@
 <script setup>
 import { computed } from 'vue'
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import AppSelect from '@/modules/admin/components/AppSelect.vue'
-// import AppSelectButtons from '@/modules/admin/components/AppSelectButtons.vue'
+import AppSelect from '@/modules/admin/components/App/AppSelect.vue'
+// import AppSelectButtons from '@/modules/admin/components/App/AppSelectButtons.vue'
 
 const props = defineProps({
   label: String,

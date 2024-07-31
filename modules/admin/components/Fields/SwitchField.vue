@@ -16,7 +16,7 @@
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
 import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
-import AppSwitch from '@/modules/admin/components/AppSwitch.vue'
+import AppSwitch from '@/modules/admin/components/App/AppSwitch.vue'
 
 const props = defineProps({
   label: String,

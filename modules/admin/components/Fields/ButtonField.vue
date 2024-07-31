@@ -34,8 +34,8 @@
 </template>
 
 <script setup>
-import AppInput from '@/modules/admin/components/AppInput.vue'
-import AppModal from '@/modules/admin/components/AppModal.vue'
+import AppInput from '@/modules/admin/components/App/AppInput.vue'
+import AppModal from '@/modules/admin/components/App/AppModal.vue'
 
 const props = defineProps({
   button: Object,
