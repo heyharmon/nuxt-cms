@@ -322,68 +322,68 @@ export default [
       //   styles: {}
       //   }
       // }, // CardsJumbo
-      // {
-      //   id: 'slsna4l422gg',
-      //   group: 'Hero',
-      //   component: 'Hero',
-      //   data: {
-      //     content: {
-      //       alignment: 'left',
-      //       pretitle: {
-      //         element: 'p',
-      //         text: 'This is the pretitle',
-      //         size: 'base',
-      //       },
-      //       title: {
-      //         element: 'h2',
-      //         text: 'Lorem ipsum dolor sit amet, consectetur.',
-      //       },
-      //       body: {
-      //         element: 'p',
-      //         text: 'We enable builders and developers to create incredible financial products and services for their users',
-      //         size: 'lg',
-      //       },
-      //       buttons: [
-      //         {
-      //           label: 'Bold',
-      //           destination: '/',
-      //           variant: 'bold',
-      //         },
-      //         {
-      //           label: 'Ghost',
-      //           destination: '/',
-      //           variant: 'ghost',
-      //         },
-      //       ],
-      //     },
-      //     image: {
-      //       file: {
-      //         id: 20,
-      //         name: 'camylla-battani-6HMdAij5lfs-unsplash',
-      //         filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-      //         path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-      //         url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-      //         extension: 'jpg',
-      //         mime: 'image/jpeg',
-      //         alt: 'The image alt',
-      //         description: 'The image description',
-      //         caption: 'The image caption',
-      //       },
-      //       width: 1280,
-      //       height: 720,
-      //     },
-      //     styles: {
-      //       padding: {
-      //         top: '6xl',
-      //         bottom: '6xl',
-      //       },
-      //       background: {
-      //         overlay: false,
-      //         image: null,
-      //       }
-      //     },
-      //   },
-      // }, // Hero
+      {
+        id: 'slsna4l422gg',
+        group: 'Hero',
+        component: 'Hero',
+        data: {
+          content: {
+            alignment: 'left',
+            pretitle: {
+              element: 'p',
+              text: 'This is the pretitle',
+              size: 'base',
+            },
+            title: {
+              element: 'h2',
+              text: 'Lorem ipsum dolor sit amet, consectetur.',
+            },
+            body: {
+              element: 'p',
+              text: 'We enable builders and developers to create incredible financial products and services for their users',
+              size: 'lg',
+            },
+            buttons: [
+              {
+                label: 'Bold',
+                destination: '/',
+                variant: 'bold',
+              },
+              {
+                label: 'Ghost',
+                destination: '/',
+                variant: 'ghost',
+              },
+            ],
+          },
+          image: {
+            file: {
+              id: 20,
+              name: 'camylla-battani-6HMdAij5lfs-unsplash',
+              filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              extension: 'jpg',
+              mime: 'image/jpeg',
+              alt: 'The image alt',
+              description: 'The image description',
+              caption: 'The image caption',
+            },
+            width: 1280,
+            height: 720,
+          },
+          styles: {
+            padding: {
+              top: '6xl',
+              bottom: '6xl',
+            },
+            background: {
+              overlay: false,
+              image: null,
+            }
+          },
+        },
+      }, // Hero
       // {
       //   id: 'akl24jl5l',
       //   group: 'Hero',
@@ -506,55 +506,55 @@ export default [
       //     },
       //   },
       // }, // HeroSplitFull
-      {
-        id: 'ghj24d4re',
-        group: 'Testimonial',
-        component: 'Testimonial',
-        data: {
-          styles: {
-            theme: null,
-            padding: {
-              top: '5xl',
-              bottom: '5xl',
-            },
-            background: {
-              overlay: true,
-              image: null,
-            }
-          },
-          content: {
-            alignment: 'center',
-            buttons: [],
-          },
-          testimonial: {
-            quote: {
-              text: '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
-            },
-            author: {
-              text: 'Judith Black',
-            },
-            extra: {
-              text: 'CEO of Workcation',
-            },
-            image: {
-              file: {
-                id: 11,
-                name: 'patrick-hendry-nk_uvN_b-w8-unsplash',
-                filename: 'ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
-                path: 'acme/ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
-                url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
-                extension: 'jpg',
-                mime: 'image/jpeg',
-                alt: 'The image alt',
-                description: 'The image description',
-                caption: 'The image caption',
-              },
-              width: 100,
-              height: 100,
-            },
-          }
-        }
-      }, // Testimonial
+      // {
+      //   id: 'ghj24d4re',
+      //   group: 'Testimonial',
+      //   component: 'Testimonial',
+      //   data: {
+      //     styles: {
+      //       theme: null,
+      //       padding: {
+      //         top: '5xl',
+      //         bottom: '5xl',
+      //       },
+      //       background: {
+      //         overlay: true,
+      //         image: null,
+      //       }
+      //     },
+      //     content: {
+      //       alignment: 'center',
+      //       buttons: [],
+      //     },
+      //     testimonial: {
+      //       quote: {
+      //         text: '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      //       },
+      //       author: {
+      //         text: 'Judith Black',
+      //       },
+      //       extra: {
+      //         text: 'CEO of Workcation',
+      //       },
+      //       image: {
+      //         file: {
+      //           id: 11,
+      //           name: 'patrick-hendry-nk_uvN_b-w8-unsplash',
+      //           filename: 'ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
+      //           path: 'acme/ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
+      //           url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/ZaicBTEP9mtHMjpeVPYHYvqTvm8TnZqJ2kL2GqvN.jpg',
+      //           extension: 'jpg',
+      //           mime: 'image/jpeg',
+      //           alt: 'The image alt',
+      //           description: 'The image description',
+      //           caption: 'The image caption',
+      //         },
+      //         width: 100,
+      //         height: 100,
+      //       },
+      //     }
+      //   }
+      // }, // Testimonial
     ]
   }
 ]

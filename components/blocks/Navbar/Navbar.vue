@@ -87,7 +87,7 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const mobileMenuOpen = ref(false)
 
 const navigation = [

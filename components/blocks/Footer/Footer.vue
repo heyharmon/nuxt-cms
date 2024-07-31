@@ -59,7 +59,7 @@
   </footer>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { defineComponent, h } from 'vue'
 
 const navigation = {

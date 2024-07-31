@@ -5,7 +5,7 @@
   />
 </template>
 
-<script setup lang="ts">
+<script setup>
 const props = defineProps({
   group: String,
   component: String,
