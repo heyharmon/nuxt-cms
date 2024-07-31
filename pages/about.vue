@@ -38,7 +38,7 @@
         }
       }"/>
 
-      <CardJumboGrid v-bind="{
+      <!-- <CardJumboGrid v-bind="{
         styles: {
             theme: 'theme-1',
             background: {
@@ -114,12 +114,12 @@
               }
             }
           ]
-      }"/>
+      }"/> -->
     </div>
   </template>
 
 <script setup>
 import HeroSplitFull from '@/components/blocks/Hero/HeroSplitFull.vue'
-import CardGrid from '@/components/blocks/Grid/CardGrid.vue'
-import CardJumboGrid from '@/components/blocks/Grid/CardJumboGrid.vue'
-</script>~/components/blocks/Repeater/CardGrid.vue~/components/blocks/Repeater/CardJumboGrid.vue
+// import CardGrid from '@/components/blocks/Grid/CardGrid.vue'
+// import CardJumboGrid from '@/components/blocks/Grid/CardJumboGrid.vue'
+</script>

@@ -24,7 +24,7 @@
 
       <div v-for="(group, index) in fieldGroupsRef.groups" :key="group.title">
         <div v-if="activeTabIndex === index" class="flex flex-col gap-y-5 px-4 py-6">
-          <Field 
+          <AbstractField
             v-for="field in group.fields"
             v-bind="field"
           />
@@ -39,7 +39,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import Field from '@/modules/admin/components/Field.vue'
+import AbstractField from '@/modules/admin/components/AbstractField.vue'
 
 const props = defineProps({
   group: String,

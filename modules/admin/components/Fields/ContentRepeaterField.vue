@@ -19,7 +19,7 @@
           </button>
         </div>
 
-        <Field 
+        <AbstractField
           v-for="field in fields"
           :label="field.label"
           :path="`collection[${index}][${field.path}]`"
@@ -45,7 +45,7 @@
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
 import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
-import Field from '@/modules/admin/components/Field.vue'
+import AbstractField from '@/modules/admin/components/AbstractField.vue'
 
 const props = defineProps({
   label: String, // Label for the field
