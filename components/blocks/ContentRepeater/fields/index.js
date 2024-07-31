@@ -8,7 +8,15 @@ const fields = {
     {
       title: 'columns',
       fields: [
-        baseContentRepeaterFields,
+        // baseContentRepeaterFields,
+        {
+          label: 'Content repeater',
+          path: 'repeater',
+          name: 'ContentRepeaterField', // TODO: Rename to Component
+          repeats: [
+              ...baseContentFields
+          ],
+      }
       ]
     },
     {

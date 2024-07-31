@@ -20,7 +20,7 @@
         </div>
 
         <Field 
-          v-for="field in fields"
+          v-for="field in repeats"
           :label="field.label"
           :path="`repeater[${index}][${field.path}]`"
           :name="field.name"
@@ -49,8 +49,8 @@ import Field from '@/modules/admin/components/Field.vue'
 
 const props = defineProps({
   label: String, // Label for the field
-  path: String, // Path to buttons array in block data
-  fields: Array, // Fields to repeat
+  path: String, // Path to point each repeated field to
+  repeats: Array, // Fields that are repeated
 })
 
 const open = ref(false)
