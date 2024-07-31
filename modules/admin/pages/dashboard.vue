@@ -17,8 +17,8 @@
 </template>
 
 <script setup>
-import DashboardSidebar from '~/modules/admin/components/DashboardSidebar.vue'
-import DashboardTopBar from '~/modules/admin/components/DashboardTopBar.vue'
+import DashboardSidebar from '@/modules/admin/components/DashboardSidebar.vue'
+import DashboardTopBar from '@/modules/admin/components/DashboardTopBar.vue'
 
 definePageMeta({
   layout: 'admin'

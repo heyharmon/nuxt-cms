@@ -1,6 +1,6 @@
 /* @tailwind base; */
 /* @tailwind components; */
-/* @tailwind utilities;
+@tailwind utilities;
 
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {
@@ -11,4 +11,4 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
-} */
+}

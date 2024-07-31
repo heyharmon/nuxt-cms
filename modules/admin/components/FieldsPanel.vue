@@ -38,7 +38,7 @@
 
 <script setup>
 import { ref, watch } from 'vue'
-import { useEditorStore } from '../store/editorStore'
+import { useEditorStore } from '@/modules/admin/store/editorStore'
 import Field from '@/modules/admin/components/Field.vue'
 
 const props = defineProps({

@@ -60,9 +60,15 @@ const blockColumns = editorStore.getValue(props.path)
 
 function addNewItem() {  
   repeater.push({ 
-    pretitle: { text: 'Pretitle' },
-    title: { text: 'Title' },
-    body: { text: 'Body' },
+    pretitle: { 
+      text: 'Pretitle' 
+    },
+    title: { 
+      text: 'Title' 
+    },
+    body: { 
+      text: 'Body' 
+    },
     buttons: [
       {
         label: 'Button label', 

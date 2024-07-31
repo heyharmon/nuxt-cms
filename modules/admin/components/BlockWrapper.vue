@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { useEditorStore } from '../store/editorStore'
+import { useEditorStore } from '@/modules/admin/store/editorStore'
 
 const props = defineProps({
   index: Number,

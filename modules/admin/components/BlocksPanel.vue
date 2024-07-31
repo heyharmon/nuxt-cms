@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { useBlockStore } from '../store/blockStore'
+import { useBlockStore } from '@/modules/admin/store/blockStore'
 
 const activeTab = ref('')
 const store = useBlockStore()
