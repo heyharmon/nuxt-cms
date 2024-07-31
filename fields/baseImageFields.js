@@ -1,4 +1,4 @@
-const baseImageFields = [
+const BaseImageFields = [
     {
         label: 'Image',
         path: 'image',
@@ -6,4 +6,4 @@ const baseImageFields = [
     },
 ]
 
-export { baseImageFields }
+export { BaseImageFields }

@@ -1,4 +1,4 @@
-const baseStyleFields = [
+const BaseStyleFields = [
   {
     label: 'Theme',
     path: 'styles.theme',
@@ -26,4 +26,4 @@ const baseStyleFields = [
   },
 ]
   
-export { baseStyleFields }
+export { BaseStyleFields }

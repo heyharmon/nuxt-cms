@@ -1,6 +1,6 @@
-import { baseContentFields } from '@/fields/baseContentFields'
-import { baseImageFields } from '@/fields/baseImageFields'
-import { baseStyleFields } from '@/fields/baseStyleFields'
+import { BaseContentFields } from '@/fields/BaseContentFields'
+import { BaseImageFields } from '@/fields/BaseImageFields'
+import { BaseStyleFields } from '@/fields/BaseStyleFields'
 
 const fields = {
   title: 'Cards editor',
@@ -13,8 +13,8 @@ const fields = {
           path: 'collection',
           name: 'ContentRepeaterField',  // TODO: Rename to Component // TODO: Can I rename to RepeaterField or FieldRepeater?
           fields: [
-              ...baseContentFields,
-              ...baseImageFields,
+              ...BaseContentFields,
+              ...BaseImageFields,
           ],
       }
       ]
@@ -22,13 +22,13 @@ const fields = {
     {
       title: 'content',
       fields: [
-        ...baseContentFields,
+        ...BaseContentFields,
       ]
     },
     {
       title: 'style',
       fields: [
-        ...baseStyleFields,
+        ...BaseStyleFields,
       ]
     }
   ],

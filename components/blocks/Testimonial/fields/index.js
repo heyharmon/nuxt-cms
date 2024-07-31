@@ -1,5 +1,5 @@
-import { baseContentFields } from '@/fields/baseContentFields'
-import { baseStyleFields } from '@/fields/baseStyleFields'
+import { BaseContentFields } from '@/fields/BaseContentFields'
+import { BaseStyleFields } from '@/fields/BaseStyleFields'
 import { TestimonialFields } from '@/fields/TestimonialFields'
 
 const fields = {
@@ -14,13 +14,13 @@ const fields = {
     {
       title: 'content',
       fields: [
-        ...baseContentFields,
+        ...BaseContentFields,
       ]
     },
     {
       title: 'style',
       fields: [
-        ...baseStyleFields,
+        ...BaseStyleFields,
       ]
     }
   ]

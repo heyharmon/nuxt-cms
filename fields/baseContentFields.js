@@ -1,4 +1,4 @@
-const baseContentFields = [
+const BaseContentFields = [
     {
         label: 'Alignment',
         path: 'content.alignment',
@@ -30,4 +30,4 @@ const baseContentFields = [
     },
 ]
 
-export { baseContentFields }
+export { BaseContentFields }
