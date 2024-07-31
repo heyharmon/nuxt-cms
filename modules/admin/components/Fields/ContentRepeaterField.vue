@@ -2,10 +2,10 @@
   <div class="margin-bottom-sm">
     <label v-if="label" class="block text-sm font-medium leading-6 text-gray-900" :for="label">{{ label }}</label>
     
-    <div v-if="repeater && repeater.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
+    <div v-if="collection && collection.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
       <!-- Draggable list of items -->
       <div 
-        v-for="(item, index) in repeater"
+        v-for="(item, index) in collection"
         @click="open = true" 
         class="group border-b border-gray-300 last:border-0 cursor-pointer hover:bg-gray-50 px-2 py-3"
       >
@@ -20,9 +20,9 @@
         </div>
 
         <Field 
-          v-for="field in repeats"
+          v-for="field in fields"
           :label="field.label"
-          :path="`repeater[${index}][${field.path}]`"
+          :path="`collection[${index}][${field.path}]`"
           :name="field.name"
         />
       </div>
@@ -50,16 +50,16 @@ import Field from '@/modules/admin/components/Field.vue'
 const props = defineProps({
   label: String, // Label for the field
   path: String, // Path to point each repeated field to
-  repeats: Array, // Fields that are repeated
+  fields: Array, // Fields that are repeated
 })
 
 const open = ref(false)
 
 const editorStore = useEditorStore()
-const repeater = editorStore.getValue(props.path)
+const collection = editorStore.getValue(props.path)
 
 function addNewItem() {  
-  repeater.push({ 
+  collection.push({ 
     pretitle: { 
       text: 'Pretitle' 
     },
@@ -79,6 +79,6 @@ function addNewItem() {
 }
 
 function removeItem(index) {
-  repeater.splice(index, 1)
+  recollectioneater.splice(index, 1)
 }
 </script>

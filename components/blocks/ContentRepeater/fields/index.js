@@ -11,9 +11,9 @@ const fields = {
         // baseContentRepeaterFields,
         {
           label: 'Content repeater',
-          path: 'repeater',
+          path: 'collection',
           name: 'ContentRepeaterField', // TODO: Rename to Component
-          repeats: [
+          fields: [
               ...baseContentFields
           ],
       }

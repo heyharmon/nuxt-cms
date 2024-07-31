@@ -11,7 +11,7 @@ export default [
         group: 'ContentRepeater',
         component: 'ContentRepeater',
         data: {
-          repeater: [
+          collection: [
             {
               content: {
                 pretitle: {

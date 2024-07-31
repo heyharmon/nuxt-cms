@@ -7,7 +7,7 @@
       <!-- Features -->
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-12 gap-y-16 lg:max-w-none lg:grid-cols-3">
-          <div v-for="(item, index) in repeater" class="flex flex-col">
+          <div v-for="(item, index) in collection" class="flex flex-col">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-100">
                 <span class="text-primary-600">{{ index + 1 }}</span>
@@ -31,6 +31,6 @@
 const props = defineProps({
   styles: Object,
   content: Object,
-  repeater: Array,
+  collection: Array,
 })
 </script>
