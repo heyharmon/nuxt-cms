@@ -8,8 +8,8 @@ export default [
     blocks: [
       {
         id: 'akl24je22',
-        group: 'ContentRepeater',
-        component: 'ContentRepeater',
+        group: 'Columns',
+        component: 'Columns',
         data: {
           collection: [
             {
@@ -99,7 +99,7 @@ export default [
             }
           }
         }
-      }, // ContentRepeater
+      }, // Columns
       {
         id: 'akl24je345',
         group: 'Cards',
