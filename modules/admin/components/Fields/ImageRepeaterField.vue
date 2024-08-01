@@ -36,7 +36,7 @@ const props = defineProps({
 })
 
 const editorStore = useEditorStore()
-const images = editorStore.getValue(props.path)
+const images = editorStore.getField(props.path)
  
 function removeImage(index) {
   images.splice(index, 1)

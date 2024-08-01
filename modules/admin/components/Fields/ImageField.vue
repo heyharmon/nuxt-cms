@@ -36,11 +36,11 @@ const props = defineProps({
 const editorStore = useEditorStore()
 
 const image = computed(() => {
-  return editorStore.getValue(props.path)
+  return editorStore.getField(props.path)
 })
  
 function removeImage() {
-  editorStore.setValue(props.path, null)
+  editorStore.setField(props.path, null)
 }
 
 function openFilePicker() {

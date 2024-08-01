@@ -54,10 +54,10 @@ const editorStore = useEditorStore()
 
 let topAndBottomPadding = computed({
   get() {
-    return editorStore.getValue(props.path + '.top');
+    return editorStore.getField(props.path + '.top');
   },
   set(value) {
-    editorStore.setValue(props.path, {
+    editorStore.setField(props.path, {
       top: value, 
       bottom: value
     })

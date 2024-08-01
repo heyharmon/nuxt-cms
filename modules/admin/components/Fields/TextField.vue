@@ -1,8 +1,8 @@
 <template>
   <AppInput 
     :label="label" 
-    :modelValue="editorStore.getValue(path)" 
-    @update:modelValue="editorStore.setValue(path, $event)"
+    :modelValue="editorStore.getField(path)" 
+    @update:modelValue="editorStore.setField(path, $event)"
   />
 </template>
 

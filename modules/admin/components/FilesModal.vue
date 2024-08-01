@@ -56,7 +56,7 @@ const emit = defineEmits(['close'])
 await useAsyncData('files', () => fileStore.index())
 
 function selectFile(file) {
-  editorStore.setValue(
+  editorStore.setField(
     editorStore.filesModal.targetProp,
     {file}
   )

@@ -34,15 +34,15 @@ const props = defineProps({
 })
 
 const editorStore = useEditorStore()
-const buttons = editorStore.getValue(props.path)
+const buttons = editorStore.getField(props.path)
 // const buttons = computed(() => {
-//   return editorStore.getValue(props.path)
+//   return editorStore.getField(props.path)
 // })
 
 function addNewButton() {
   // Set content object with empty buttons array
   // if (!editorStore.activeBlock.data.content) {
-  //   setValue({
+  //   setField({
   //     object: editorStore.activeBlock.data,
   //     path: 'content',
   //     value: {

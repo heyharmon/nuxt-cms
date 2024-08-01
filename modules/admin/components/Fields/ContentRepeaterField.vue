@@ -55,7 +55,7 @@ const props = defineProps({
 const open = ref(false)
 
 const editorStore = useEditorStore()
-const collection = editorStore.getValue(props.path)
+const collection = editorStore.getField(props.path)
 
 function addNewItem() {  
   collection.push({ 

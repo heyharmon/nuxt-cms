@@ -40,30 +40,23 @@ export const useEditorStore = defineStore('editor', {
       this.blocks = page.blocks
     },
 
-    getValue(path) { // TODO: Rename to get getBlockData, so where it's used it's clear what it's getting
+    getField(path) { // TODO: Rename to get getBlockData, so where it's used it's clear what it's getting
       return get(this.activeBlock.data, path)
     },
 
-    setValue(path, value) { // TODO: Rename to get setBlockData, so where it's used it's clear what it's getting
+    setField(path, value) { // TODO: Rename to get setBlockData, so where it's used it's clear what it's getting
       set(this.activeBlock.data, path, value)
     },
 
     pushToArray({path, value}) { // TODO: Rename to get pushToBlockDataArray, so where it's used it's clear what it's getting
-      let array = this.getValue(path)
+      let array = this.getField(path)
           array.push(value)
-
-      console.log('Array: ', array)
     },
 
     removeFromRepeater(path, index) {
-      let repeater = this.getValue(path)
+      let repeater = this.getField(path)
           repeater.splice(index, 1)
-      // pullAt(repeater, index)
     },
-
-    // addImage(path, image) {
-    //   this.activeBlock.data[path].push(image)
-    // },
     
     // TODO: Move to a UI store
     showDefault() {
@@ -102,12 +95,6 @@ export const useEditorStore = defineStore('editor', {
     },
   },
 })
-
-// export const usePageStore = defineStore('page', () => {d
-//   const page = ref()
-
-//   return { store }
-// })
 
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useEditorStore, import.meta.hot));
