@@ -2,7 +2,7 @@ const BaseImageFields = [
     {
         label: 'Image',
         path: 'image',
-        name: 'ImageField', // TODO: Rename to Component
+        component: 'ImageField',
     },
 ]
 

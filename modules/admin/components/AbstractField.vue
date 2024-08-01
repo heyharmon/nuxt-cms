@@ -3,7 +3,6 @@
     :is="component"
     :label="label"
     :path="path"
-    :name="name"
     :options="options"
   />
 </template>
@@ -12,11 +11,11 @@
 const props = defineProps({
   label: String,
   path: String,
-  name: String, // TODO: Rename to FieldComponent or Field
+  component: String,
   options: Object,
 })
 
 let component = computed(() => {
-  return defineAsyncComponent(() => import(`@/modules/admin/components/Fields/${props.name}.vue`))
+  return defineAsyncComponent(() => import(`@/modules/admin/components/Fields/${props.component}.vue`))
 })
 </script>

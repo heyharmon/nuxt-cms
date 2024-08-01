@@ -7,22 +7,22 @@ const BaseStyleFields = [
       { value: 'theme-2', label: 'Theme 2' },
       { value: 'theme-3', label: 'Theme 3' },
     ],
-    name: 'SelectButtonsField', // TODO: Rename to Component
+    component: 'SelectButtonsField',
   },
   {
     label: 'Padding',
     path: 'styles.padding',
-    name: 'PaddingField', // TODO: Rename to Component
+    component: 'PaddingField',
   },
   {
     label: 'Overlay',
     path: 'styles.background.overlay',
-    name: 'SwitchField', // TODO: Rename to Component
+    component: 'SwitchField',
   },
   {
     label: 'Background',
     path: 'styles.background.image',
-    name: 'ImageField', // TODO: Rename to Component
+    component: 'ImageField',
   },
 ]
   

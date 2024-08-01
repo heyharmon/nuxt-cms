@@ -2,22 +2,22 @@ const TestimonialFields = [
     {
         label: 'Testimonial quote',
         path: 'testimonial.quote.text',
-        name: 'TextField', // TODO: Rename to Component
+        component: 'TextField',
       },
       {
           label: 'Testimonial author',
           path: 'testimonial.author.text',
-          name: 'TextField', // TODO: Rename to Component
+          component: 'TextField',
       },
       {
           label: 'Testimonial role or location',
           path: 'testimonial.extra.text',
-          name: 'TextField', // TODO: Rename to Component
+          component: 'TextField',
       },
       {
           label: 'Testimonial image',
           path: 'testimonial.image',
-          name: 'ImageField', // TODO: Rename to Component
+          component: 'ImageField',
       },
 ]
 

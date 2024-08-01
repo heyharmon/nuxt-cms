@@ -23,7 +23,7 @@
           v-for="field in fields"
           :label="field.label"
           :path="`collection[${index}][${field.path}]`"
-          :name="field.name"
+          :component="field.component"
         />
       </div>
     </div>

@@ -11,7 +11,7 @@ const fields = {
         {
           label: 'Columns',
           path: 'collection',
-          name: 'ContentRepeaterField', // TODO: Rename to Component // TODO: Can I rename to RepeaterField or FieldRepeater?
+          component: 'ContentRepeaterField',
           fields: [
               ...BaseContentFields,
           ],
