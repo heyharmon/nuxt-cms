@@ -61,7 +61,7 @@ function selectFile(file) {
     {file}
   )
 
-  // editorStore.pushToArray({
+  // editorStore.pushToCollection({
   //   path: editorStore.filesModal.targetProp,
   //   value: {file}
   // })

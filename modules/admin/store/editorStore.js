@@ -40,15 +40,15 @@ export const useEditorStore = defineStore('editor', {
       this.blocks = page.blocks
     },
 
-    getField(path) { // TODO: Rename to get getBlockData, so where it's used it's clear what it's getting
+    getField(path) {
       return get(this.activeBlock.data, path)
     },
 
-    setField(path, value) { // TODO: Rename to get setBlockData, so where it's used it's clear what it's getting
+    setField(path, value) {
       set(this.activeBlock.data, path, value)
     },
 
-    pushToArray({path, value}) { // TODO: Rename to get pushToBlockDataArray, so where it's used it's clear what it's getting
+    pushToCollection({path, value}) { // TODO: Rename to get pushToBlockDataArray, so where it's used it's clear what it's getting
       let array = this.getField(path)
           array.push(value)
     },
