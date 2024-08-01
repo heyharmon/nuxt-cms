@@ -1,21 +1,13 @@
 <template>
   <AppInput 
     :label="label" 
-    :modelValue="getValue({
-      object: editorStore.activeBlock.data, 
-      path: path
-    })" 
-    @update:modelValue="setValue({
-      object: editorStore.activeBlock.data, 
-      path: path, 
-      value: $event
-    })"
+    :modelValue="editorStore.getValue(path)" 
+    @update:modelValue="editorStore.setValue(path, $event)"
   />
 </template>
 
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import AppInput from '@/modules/admin/components/App/AppInput.vue'
 
 const props = defineProps({

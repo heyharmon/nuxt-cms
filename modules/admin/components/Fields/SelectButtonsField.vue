@@ -2,21 +2,13 @@
   <AppSelectButtons 
     :label="label" 
     :options="options"
-    :modelValue="getValue({
-      object: store.activeBlock.data, 
-      path: path
-    })" 
-    @update:modelValue="setValue({
-      object: store.activeBlock.data, 
-      path: path, 
-      value: $event
-    })"
+    :modelValue="editorStore.getValue(path)" 
+    @update:modelValue="editorStore.setValue(path, $event)"
   />
 </template>
 
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import AppSelectButtons from '@/modules/admin/components/App/AppSelectButtons.vue'
 
 const props = defineProps({
@@ -25,5 +17,5 @@ const props = defineProps({
   options: Array,
 })
 
-const store = useEditorStore()
+const editorStore = useEditorStore()
 </script>

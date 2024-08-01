@@ -44,7 +44,6 @@
 
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import AbstractField from '@/modules/admin/components/AbstractField.vue'
 
 const props = defineProps({

@@ -1,21 +1,13 @@
 <template>
   <AppSwitch 
     :label="label" 
-    :modelValue="getValue({
-      object: store.activeBlock.data, 
-      path: path
-    })" 
-    @update:modelValue="setValue({
-      object: store.activeBlock.data, 
-      path: path, 
-      value: $event
-    })"
+    :modelValue="editorStore.getValue(path)" 
+    @update:modelValue="editorStore.setValue(path, $event)"
   />
 </template>
 
 <script setup>
 import { useEditorStore } from '@/modules/admin/store/editorStore'
-import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import AppSwitch from '@/modules/admin/components/App/AppSwitch.vue'
 
 const props = defineProps({
@@ -23,6 +15,6 @@ const props = defineProps({
   path: String
 })
 
-const store = useEditorStore()
+const editorStore = useEditorStore()
 </script>
 

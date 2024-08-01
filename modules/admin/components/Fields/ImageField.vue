@@ -25,7 +25,6 @@
 
 <script setup>
 import { computed } from 'vue'
-import { getValue, setValue } from '@/modules/admin/composables/useArrayHelpers'
 import { useEditorStore } from '@/modules/admin/store/editorStore'
 import Image from '@/modules/admin/components/Fields/Image.vue'
 
