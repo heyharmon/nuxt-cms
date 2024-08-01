@@ -48,12 +48,12 @@ export const useEditorStore = defineStore('editor', {
       set(this.activeBlock.data, path, value)
     },
 
-    pushToCollection({path, value}) { // TODO: Rename to get pushToBlockDataArray, so where it's used it's clear what it's getting
+    pushToCollection({path, value}) {
       let array = this.getField(path)
           array.push(value)
     },
 
-    removeFromRepeater(path, index) {
+    removeFromCollection(path, index) {
       let repeater = this.getField(path)
           repeater.splice(index, 1)
     },
