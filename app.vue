@@ -1,85 +1,154 @@
 <template>
-  <div>
+  <div :style="styles" class="antialiased">
     <NuxtLoadingIndicator/>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
 
     <!-- Setup primary, secondary and accent color css variables -->
-    <!-- <component :is="`style`"> -->
-      <!-- :root { -->
-          <!-- --primary-50:  {{ primary[50] }};
-          --primary-100: {{ primary[100] }};
-          --primary-200: {{ primary[200] }};
-          --primary-300: {{ primary[300] }};
-          --primary-400: {{ primary[400] }};
-          --primary-500: {{ primary[500] }};
-          --primary-600: {{ primary[600] }};
-          --primary-700: {{ primary[700] }};
-          --primary-800: {{ primary[800] }};
-          --primary-900: {{ primary[900] }}; -->
-
-          <!-- --secondary-50:  {{ secondary[50] }};
-          --secondary-100: {{ secondary[100] }};
-          --secondary-200: {{ secondary[200] }};
-          --secondary-300: {{ secondary[300] }};
-          --secondary-400: {{ secondary[400] }};
-          --secondary-500: {{ secondary[500] }};
-          --secondary-600: {{ secondary[600] }};
-          --secondary-700: {{ secondary[700] }};
-          --secondary-800: {{ secondary[800] }};
-          --secondary-900: {{ secondary[900] }}; -->
-
-          <!-- --accent-50:  {{ accent[50] }};
-          --accent-100: {{ accent[100] }};
-          --accent-200: {{ accent[200] }};
-          --accent-300: {{ accent[300] }};
-          --accent-400: {{ accent[400] }};
-          --accent-500: {{ accent[500] }};
-          --accent-600: {{ accent[600] }};
-          --accent-700: {{ accent[700] }};
-          --accent-800: {{ accent[800] }};
-          --accent-900: {{ accent[900] }}; -->
-      <!-- } -->
-      <!-- </component> -->
-
-      <!-- <component :is="`style`">
+    <!-- <component :is="`style`">
       :root {
-          --heading-h1-color:                var(--gray-900);
-          --heading-h2-color:                var(--gray-900);
-          --heading-h3-color:                var(--gray-900);
-          --heading-h4-color:                var(--gray-900);
-          --heading-h5-color:                var(--gray-900);
-          --heading-h6-color:                var(--gray-900);
-
-          --text-color:                      var(--gray-700);
-          --text-highlight-color:            var(--gray-700);
-          --text-subtle-color:               var(--gray-500);
-
-          --button-primary-bg-color:         var(--primary-500);
-          --button-primary-bg-color-hover:   var(--primary-600);
-          --button-primary-text-color:       var(--white);
-          --button-secondary-bg-color:       var(--primary-500);
-          --button-secondary-bg-color-hover: var(--primary-600);
-          --button-secondary-text-color:     var(--white);
-          --button-tertiary-bg-color:        var(--primary-500);
-          --button-tertiary-bg-color-hover:  var(--primary-600);
-          --button-tertiary-text-color:      var(--white);
-
-          --bg-color:                        var(--white);
-          --bg-overlay-color:                var(--white);
-
-          --card-bg-color:                   var(--white);
-          --card-bg-color-hover:             var(--gray-100);
+          --primary: {{ primary }};
+          --secondary: {{ secondary }};
+          --tertiary: {{ tertiary }};
+          --neutral: {{ neutral }};
+          --black: {{ black }};
+          --grey: {{ grey }};
+          --white: {{ white }};
       }
-      </component> -->
+
+      :root {
+        --wrapper-bg: var(--white);
+        --pretitle-color: var(--secondary);
+        --title-color: var(--primary);
+        --body-color: var(--primary);
+        --btn-primary-bg: var(--secondary);
+        --btn-primary-text: var(--white);
+        --btn-secondary-bg: var(--primary);
+        --btn-secondary-text: var(--white);
+        --btn-simple-text: var(--primary);
+      }
+
+      [data-theme='theme-1'] {
+        --wrapper-bg: var(--neutral);
+        --pretitle-color: var(--secondary);
+        --title-color: var(--primary);
+        --body-color: var(--primary);
+        --btn-primary-bg: var(--secondary);
+        --btn-primary-text: var(--white);
+        --btn-secondary-bg: var(--primary);
+        --btn-secondary-text: var(--white);
+        --btn-simple-text: var(--primary);
+      }
+
+      [data-theme='theme-2'] {
+        --wrapper-bg: var(--primary);
+        --pretitle-color: var(--white);
+        --title-color: var(--white);
+        --body-color: var(--white);
+        --btn-primary-bg: var(--secondary);
+        --btn-primary-text: var(--white);
+        --btn-secondary-bg: var(--white);
+        --btn-secondary-text: var(--black);
+        --btn-simple-text: var(--white);
+      }
+
+      [data-theme='theme-3'] {
+        --wrapper-bg: var(--secondary);
+        --pretitle-color: var(--white);
+        --title-color: var(--white);
+        --body-color: var(--white);
+        --btn-primary-bg: var(--white);
+        --btn-primary-text: var(--primary);
+        --btn-secondary-bg: var(--white);
+        --btn-secondary-text: var(--primary);
+        --btn-simple-text: var(--white);
+      }
+    </component> -->
   </div>
 </template>
 
 <script setup>
-import { generatePalette } from '@/utils/colors'
+const colors = {
+  primary: '#32473b',
+  secondary: '#ff7200',
+  tertiary: '#c7e5fc',
+  neutral: '#f5f5f5',
+  black: '#000000',
+  grey: '#808080',
+  white: '#ffffff',
+}
 
-const primary = computed(() => generatePalette('#4f46e5'))
-const secondary = computed(() => generatePalette('#84cc16'))
-const accent = computed(() => generatePalette('#ebb02d'))
+const styles = computed(() => {
+  const obj = {}
+  // for (const key in classes) {
+  //   obj[key] = classes[key];
+  // }
+  for (const key in colors) {
+    obj[`--${key}`] = colors[key]
+  }
+  return obj;
+})
+
+// console.log('Styles: ', styles.value)
 </script>
+
+<style>
+/* :root {
+  --primary: {{ primary }};
+  --secondary: {{ secondary }};
+  --tertiary: {{ tertiary }};
+  --neutral: {{ neutral }};
+  --black: {{ black }};
+  --grey: {{ grey }};
+  --white: {{ white }};
+} */
+
+:root {
+  --wrapper-bg: var(--white);
+  --pretitle-color: var(--secondary);
+  --title-color: var(--primary);
+  --body-color: var(--primary);
+  --btn-primary-bg: var(--secondary);
+  --btn-primary-text: var(--white);
+  --btn-secondary-bg: var(--primary);
+  --btn-secondary-text: var(--white);
+  --btn-simple-text: var(--primary);
+}
+
+[data-theme='theme-1'] {
+  --wrapper-bg: var(--neutral);
+  --pretitle-color: var(--secondary);
+  --title-color: var(--primary);
+  --body-color: var(--primary);
+  --btn-primary-bg: var(--secondary);
+  --btn-primary-text: var(--white);
+  --btn-secondary-bg: var(--primary);
+  --btn-secondary-text: var(--white);
+  --btn-simple-text: var(--primary);
+}
+
+[data-theme='theme-2'] {
+  --wrapper-bg: var(--primary);
+  --pretitle-color: var(--white);
+  --title-color: var(--white);
+  --body-color: var(--white);
+  --btn-primary-bg: var(--secondary);
+  --btn-primary-text: var(--white);
+  --btn-secondary-bg: var(--white);
+  --btn-secondary-text: var(--black);
+  --btn-simple-text: var(--white);
+}
+
+[data-theme='theme-3'] {
+  --wrapper-bg: var(--secondary);
+  --pretitle-color: var(--white);
+  --title-color: var(--white);
+  --body-color: var(--white);
+  --btn-primary-bg: var(--white);
+  --btn-primary-text: var(--primary);
+  --btn-secondary-bg: var(--white);
+  --btn-secondary-text: var(--primary);
+  --btn-simple-text: var(--white);
+}
+</style>

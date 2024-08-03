@@ -27,10 +27,10 @@ const props = defineProps({
 })
 
 const baseClasses = `
-  text-gray-900
+  heading
   font-bold
   text-pretty
-  tracking-tight
+  tracking-normal
 `
 
 const sizeClasses = {

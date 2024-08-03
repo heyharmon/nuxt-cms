@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
+  plugins: [
+    {
+      src: '~/plugins/css-var.js',
+      mode: 'client' // Important for running in client side only
+    }
+  ],
   
   hooks: {
     'pages:extend': (pages) => {

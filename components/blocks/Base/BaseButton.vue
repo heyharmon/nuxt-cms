@@ -26,7 +26,7 @@ const props = defineProps({
     destination: String,
     variant: {
         type: String,
-        default: 'bold' // bold, light, ghost, text
+        default: 'primary' // primary, secondary, text
     },
     size: {
         type: String,
@@ -53,10 +53,11 @@ const baseClasses = `
 `
 
 const variantClasses = {
-  bold: 'text-white bg-primary-600 hover:bg-primary-700 shadow-sm',
-  light: 'text-primary-600 bg-primary-100 hover:bg-primary-200 shadow-sm',
-  ghost: 'text-primary-600 bg-transparent ring-2 ring-inset ring-primary-600 hover:bg-primary-200',
-  text: 'text-primary-600 bg-transparent pl-0 pr-0 pt-0 pb-0',
+  primary: 'btn-primary hover:bg-primary-700 shadow-sm',
+  secondary: 'btn-secondary hover:bg-secondary-700 shadow-sm',
+  // light: 'btn bg-white hover:bg-primary-200 shadow-sm',
+  // ghost: 'body-color bg-transparent ring-2 ring-inset ring-white hover:bg-primary-200',
+  simple: 'btn-simple bg-transparent pl-0 pr-0 pt-0 pb-0',
 }
 
 const sizeClasses = {

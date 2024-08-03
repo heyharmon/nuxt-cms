@@ -7,6 +7,69 @@ export default [
     path: '/',
     blocks: [
       {
+        id: 'slsna4l4',
+        group: 'Hero',
+        component: 'HeroSplitFull',
+        data: {
+          content: {
+            pretitle: {
+              element: 'p',
+              text: 'This is the pretitle',
+              size: 'base',
+            },
+            title: {
+              element: 'h1',
+              text: 'Lorem ipsum dolor sit amet, consectetur.',
+              size: '4xl',
+            },
+            body: {
+              element: 'p',
+              text: 'We enable builders and developers to create incredible financial products and services for their users',
+              size: 'lg',
+            },
+            buttons: [
+              {
+                label: 'Primary',
+                destination: '/',
+                variant: 'primary',
+              },
+              {
+                label: 'Simple',
+                destination: '/',
+                variant: 'simple',
+              },
+            ],
+          },
+          image: {
+            file: {
+              id: 20,
+              name: 'camylla-battani-6HMdAij5lfs-unsplash',
+              filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
+              extension: 'jpg',
+              mime: 'image/jpeg',
+              alt: 'The image alt',
+              description: 'The image description',
+              caption: 'The image caption',
+            },
+            width: 1280,
+            height: 720,
+          },
+          styles: {
+            theme: 'theme-2',
+            padding: {
+              top: 'none',
+              bottom: 'none',
+            },
+            background: {
+              overlay: false,
+              image: null,
+            }
+          },
+        },
+      }, // HeroSplitFull
+      {
         id: 'akl24je22',
         group: 'Columns',
         component: 'Columns',
@@ -94,7 +157,7 @@ export default [
           },
           styles: {
             background: {
-              overlay: true,
+              overlay: false,
               image: null,
             }
           }
@@ -235,8 +298,9 @@ export default [
             buttons: [],
           },
           styles: {
+            theme: 'theme-1',
             background: {
-              overlay: true,
+              overlay: false,
               image: null,
             }
           },
@@ -319,7 +383,9 @@ export default [
           },
           buttons: [],
         },
-        styles: {}
+        styles: {
+          theme: 'theme-2'
+        }
         }
       }, // CardsJumbo
       {
@@ -438,87 +504,25 @@ export default [
               bottom: '6xl',
             },
             background: {
-              overlay: true,
+              overlay: false,
               image: null,
             }
           },
         }
       }, // HeroSplit
       {
-        id: 'slsna4l4',
-        group: 'Hero',
-        component: 'HeroSplitFull',
-        data: {
-          content: {
-            pretitle: {
-              element: 'p',
-              text: 'This is the pretitle',
-              size: 'base',
-            },
-            title: {
-              element: 'h1',
-              text: 'Lorem ipsum dolor sit amet, consectetur.',
-              size: '4xl',
-            },
-            body: {
-              element: 'p',
-              text: 'We enable builders and developers to create incredible financial products and services for their users',
-              size: 'lg',
-            },
-            buttons: [
-              {
-                label: 'Bold',
-                destination: '/',
-                variant: 'bold',
-              },
-              {
-                label: 'Ghost',
-                destination: '/',
-                variant: 'ghost',
-              },
-            ],
-          },
-          image: {
-            file: {
-              id: 20,
-              name: 'camylla-battani-6HMdAij5lfs-unsplash',
-              filename: 'n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-              path: 'acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-              url: 'https://ik.imagekit.io/heyharmon/cms-local/acme/n9Z8JEkCMtUhhy1gMrWtY8qdiXEvTcgPUnQVRsVR.jpg',
-              extension: 'jpg',
-              mime: 'image/jpeg',
-              alt: 'The image alt',
-              description: 'The image description',
-              caption: 'The image caption',
-            },
-            width: 1280,
-            height: 720,
-          },
-          styles: {
-            padding: {
-              top: 'none',
-              bottom: 'none',
-            },
-            background: {
-              overlay: true,
-              image: null,
-            }
-          },
-        },
-      }, // HeroSplitFull
-      {
         id: 'ghj24d4re',
         group: 'Testimonial',
         component: 'Testimonial',
         data: {
           styles: {
-            theme: null,
+            theme: 'theme-3',
             padding: {
               top: '5xl',
               bottom: '5xl',
             },
             background: {
-              overlay: true,
+              overlay: false,
               image: null,
             }
           },
