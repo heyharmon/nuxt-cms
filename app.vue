@@ -1,11 +1,23 @@
 <template>
-  <div class="antialiased">
+  <div :style="styles" class="antialiased">
     <NuxtLoadingIndicator/>
     <NuxtLayout>
       <!-- <pre>{{ styles }}</pre> -->
       <!-- <pre>{{ themes }}</pre> -->
       <NuxtPage />
     </NuxtLayout>
+
+    <component :is="`style`">
+      :root {
+        --primary: {{ primary }};
+        --secondary: {{ secondary }};
+        --tertiary: {{ tertiary }};
+        --neutral: {{ neutral }};
+        --black: {{ black }};
+        --grey: {{ grey }};
+        --white: {{ white }};
+      }
+    </component>
 
     <!-- Setup primary, secondary and accent color css variables -->
     <!-- <component :is="`style`">
@@ -71,9 +83,16 @@
 </template>
 
 <script setup>
+const primary = 'red'
+const secondary = 'blue'
+const tertiary = 'yellow'
+const neutral = 'green'
+const black = '#000000'
+const grey = '#808080'
+const white = '#ffffff'
+
 // const colors = {
-//   'pretitle-color': '#ff7200',
-//   primary: '#32473b',
+//   primary: 'red',
 //   secondary: '#ff7200',
 //   tertiary: '#c7e5fc',
 //   neutral: '#f5f5f5',
@@ -89,6 +108,27 @@
 //   }
 //   return obj;
 // })
+
+// const colors = [
+//   {
+//     name: 'root',
+//     attributes: {
+//       '--primary': 'red',
+//     }
+//   }
+// ]
+
+// const styles = computed(() => {
+//   const obj = {}
+//   colors.forEach((palette) => {
+//     obj[`:root`] = palette.attributes
+//   })
+//   return obj
+// })
+
+// useHead({
+//   style: styles.value
+// });
 
 // const themeGroups = [
 //   {
