@@ -1,6 +1,4 @@
-// const themes = require('./tailwind/themes-plugin.js') 
-// const forms = require('@tailwindcss/forms')
-const plugin = require('tailwindcss/plugin')
+const multiThemePlugin = require('./plugins/multi-theme-plugin.js')
 
 module.exports = {
   theme: {
@@ -72,70 +70,54 @@ module.exports = {
   },
 
   plugins: [
-    // Our own themeing plugin
-    // https://www.protailwind.com/workshops/multi-theme-strategy
-    // themes,
-    plugin(function ({ addBase }) {
-      addBase({
-        ':root': {
-          // '--primary': '#32473b',
-          // '--secondary': '#ff7200',
-          // '--tertiary': '#c7e5fc',
-          // '--neutral': '#f5f5f5',
-          // '--black': '#000000',
-          // '--grey': '#808080',
-          // '--white': '#ffffff',
+    multiThemePlugin,
 
-          // '--wrapper-bg': '#ffffff',
-          // '--pretitle-color': '#ff7200',
-          // '--title-color': '#32473b',
-          // '--body-color': '#32473b',
-          // '--btn-primary-bg': '#ff7200',
-          // '--btn-primary-text': '#ffffff',
-          // '--btn-secondary-bg': '#808080',
-          // '--btn-secondary-text': '#ffffff',
+    // // Our own themeing plugin
+    // // https://www.protailwind.com/workshops/multi-theme-strategy
+    // plugin(function ({ addBase }) {
+    //   addBase({
+    //     ':root': {
+    //       '--primary': '#32473b',
+    //       '--secondary': '#ff7200',
+    //       '--tertiary': '#c7e5fc',
+    //       '--neutral': '#f5f5f5',
+    //       '--black': '#000000',
+    //       '--grey': '#808080',
+    //       '--white': '#ffffff',
 
-          '--primary': '#32473b',
-          '--secondary': '#ff7200',
-          '--tertiary': '#c7e5fc',
-          '--neutral': '#f5f5f5',
-          '--black': '#000000',
-          '--grey': '#808080',
-          '--white': '#ffffff',
-
-          '--wrapper-bg': 'var(--white)',
-          '--pretitle-color': 'var(--secondary)',
-          '--title-color': 'var(--primary)',
-          '--body-color': 'var(--primary)',
-          '--btn-primary-bg': 'var(--secondary)',
-          '--btn-primary-text': 'var(--white)',
-          '--btn-secondary-bg': 'var(--grey)',
-          '--btn-secondary-text': 'var(--primary)',
-        },
+    //       '--wrapper-bg': 'var(--white)',
+    //       '--pretitle-color': 'var(--secondary)',
+    //       '--title-color': 'var(--primary)',
+    //       '--body-color': 'var(--primary)',
+    //       '--btn-primary-bg': 'var(--secondary)',
+    //       '--btn-primary-text': 'var(--white)',
+    //       '--btn-secondary-bg': 'var(--grey)',
+    //       '--btn-secondary-text': 'var(--primary)',
+    //     },
         
-        '[data-theme="theme-1"]': {
-          '--wrapper-bg': 'var(--neutral)',
-          '--pretitle-color': 'var(--secondary)',
-          '--title-color': 'var(--primary)',
-          '--body-color': 'var(--primary)',
-          '--btn-primary-bg': 'var(--secondary)',
-          '--btn-primary-text': 'var(--white)',
-          '--btn-secondary-bg': 'var(--grey)',
-          '--btn-secondary-text': 'var(--primary)',
-        },
+    //     '[data-theme="theme-1"]': {
+    //       '--wrapper-bg': 'var(--neutral)',
+    //       '--pretitle-color': 'var(--secondary)',
+    //       '--title-color': 'var(--primary)',
+    //       '--body-color': 'var(--primary)',
+    //       '--btn-primary-bg': 'var(--secondary)',
+    //       '--btn-primary-text': 'var(--white)',
+    //       '--btn-secondary-bg': 'var(--grey)',
+    //       '--btn-secondary-text': 'var(--primary)',
+    //     },
 
-        '[data-theme="theme-2"]': {
-          '--wrapper-bg': 'var(--primary)',
-          '--pretitle-color': 'var(--secondary)',
-          '--title-color': 'var(--white)',
-          '--body-color': 'var(--white)',
-          '--btn-primary-bg': 'var(--secondary)',
-          '--btn-primary-text': 'var(--white)',
-          '--btn-secondary-bg': 'var(--white)',
-          '--btn-secondary-text': 'var(--primary)',
-        }
-      })
-    }),
+    //     '[data-theme="theme-2"]': {
+    //       '--wrapper-bg': 'var(--primary)',
+    //       '--pretitle-color': 'var(--secondary)',
+    //       '--title-color': 'var(--white)',
+    //       '--body-color': 'var(--white)',
+    //       '--btn-primary-bg': 'var(--secondary)',
+    //       '--btn-primary-text': 'var(--white)',
+    //       '--btn-secondary-bg': 'var(--white)',
+    //       '--btn-secondary-text': 'var(--primary)',
+    //     }
+    //   })
+    // }),
 
     // Tailwind form styles
     // https://github.com/tailwindlabs/tailwindcss-forms

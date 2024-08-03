@@ -57,7 +57,7 @@ export default [
             height: 720,
           },
           styles: {
-            theme: 'theme-2',
+            theme: null,
             padding: {
               top: 'none',
               bottom: 'none',
