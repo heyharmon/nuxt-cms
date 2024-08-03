@@ -3,28 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Color theme overides
-    * Resource: https://blog.logrocket.com/applying-dynamic-styles-tailwind-css/
-    */
-    :root {
-        /* --primary: '#32473b';
-        --secondary: '#ff7200';
-        --tertiary: '#c7e5fc';
-        --neutral: '#f5f5f5';
-        --black: '#000000';
-        --grey: '#808080';
-        --white: '#ffffff'; */
-
-        --wrapper-bg: var(--white);
-        --pretitle-color: var(--secondary);
-        --title-color: var(--primary);
-        --body-color: var(--primary);
-        --btn-primary-bg: var(--secondary);
-        --btn-primary-text: var(--white);
-        --btn-secondary-bg: var(--grey);
-        --btn-secondary-text: var(--primary);
-    }
-
+@layer base {
     .wrapper { 
         background-color: var(--wrapper-bg);
     }
@@ -54,8 +33,6 @@
     .btn-simple { 
         color: var(--btn-simple-text);
     }
-@layer base {
-    
 
     /* [data-theme='theme-1'] {
         --wrapper-bg: var(--neutral);
@@ -67,34 +44,30 @@
         --btn-secondary-bg: var(--secondary);
         --btn-secondary-text: var(--white);
     } */
-
     
-
-    /* Fluid font size variables
-    * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
-    * Resource: https://utopia.fyi/type/calculator
-    */
     :root {
-        --font-size-xs:   clamp(0.90rem,  -0.25vw + 0.85rem, 0.57rem);
-        --font-size-sm:   clamp(0.95rem,  -0.15vw + 0.92rem, 0.75rem);
-        --font-size-base: clamp(1rem,     0vw     + 1rem,    1rem);
-        --font-size-lg:   clamp(1.125rem, 0.25vw  + 1rem,    1.25rem);
-        --font-size-xl:   clamp(1.27rem,  0.53vw  + 1.13rem, 1.77rem);
-        --font-size-2xl:  clamp(1.42rem,  0.98vw  + 1.18rem, 2.35rem);
-        --font-size-3xl:  clamp(1.6rem,   1.61vw  + 1.2rem,  3.13rem);
-        --font-size-4xl:  clamp(1.8rem,   2.48vw  + 1.18rem, 4.16rem);
-        --font-size-5xl:  clamp(2.03rem,  3.69vw  + 1.1rem,  5.53rem);
-        --font-size-6xl:  clamp(2.28rem,  5.35vw  + 0.94rem, 7.36rem);
-        --font-size-7xl:  clamp(2.57rem,  7.00vw  + 0.66rem, 9.20rem);
-        --font-size-8xl:  clamp(2.80rem,  9.70vw  + 0.66rem, 10.40rem);
-        --font-size-9xl:  clamp(3.00rem,  11.40vw + 0.66rem, 11.60rem);
-    }
+        /* Fluid font size variables
+         * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
+         * Resource: https://utopia.fyi/type/calculator
+         */
+         --font-size-xs:   clamp(0.90rem,  -0.25vw + 0.85rem, 0.57rem);
+         --font-size-sm:   clamp(0.95rem,  -0.15vw + 0.92rem, 0.75rem);
+         --font-size-base: clamp(1rem,     0vw     + 1rem,    1rem);
+         --font-size-lg:   clamp(1.125rem, 0.25vw  + 1rem,    1.25rem);
+         --font-size-xl:   clamp(1.27rem,  0.53vw  + 1.13rem, 1.77rem);
+         --font-size-2xl:  clamp(1.42rem,  0.98vw  + 1.18rem, 2.35rem);
+         --font-size-3xl:  clamp(1.6rem,   1.61vw  + 1.2rem,  3.13rem);
+         --font-size-4xl:  clamp(1.8rem,   2.48vw  + 1.18rem, 4.16rem);
+         --font-size-5xl:  clamp(2.03rem,  3.69vw  + 1.1rem,  5.53rem);
+         --font-size-6xl:  clamp(2.28rem,  5.35vw  + 0.94rem, 7.36rem);
+         --font-size-7xl:  clamp(2.57rem,  7.00vw  + 0.66rem, 9.20rem);
+         --font-size-8xl:  clamp(2.80rem,  9.70vw  + 0.66rem, 10.40rem);
+         --font-size-9xl:  clamp(3.00rem,  11.40vw + 0.66rem, 11.60rem);
 
-    /* Fluid spacing variables
-    * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
-    * Resource: https://utopia.fyi/space/calculator
-    */
-    :root {
+        /* Fluid spacing variables
+         * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
+         * Resource: https://utopia.fyi/space/calculator
+         */
         --spacing-05: clamp(0.44rem, -0.45vw + 0.55rem, 0.01rem);
         --spacing-1:  clamp(0.49rem, -0.51vw + 0.62rem, 0.01rem);
         --spacing-15: clamp(0.55rem, -0.57vw + 0.7rem, 0.02rem);
