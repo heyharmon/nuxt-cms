@@ -1,5 +1,5 @@
 <template>
-  <div :style="styles" class="antialiased">
+  <div class="antialiased">
     <NuxtLoadingIndicator/>
     <NuxtLayout>
       <!-- <pre>{{ styles }}</pre> -->
@@ -71,58 +71,53 @@
 </template>
 
 <script setup>
-const colors = {
-  'pretitle-color': '#ff7200',
-  primary: '#32473b',
-  secondary: '#ff7200',
-  tertiary: '#c7e5fc',
-  neutral: '#f5f5f5',
-  black: '#000000',
-  grey: '#808080',
-  white: '#ffffff',
-}
+// const colors = {
+//   'pretitle-color': '#ff7200',
+//   primary: '#32473b',
+//   secondary: '#ff7200',
+//   tertiary: '#c7e5fc',
+//   neutral: '#f5f5f5',
+//   black: '#000000',
+//   grey: '#808080',
+//   white: '#ffffff',
+// }
 
-const styles = computed(() => {
-  const obj = {}
-  // for (const key in classes) {
-  //   obj[key] = classes[key];
-  // }
-  for (const key in colors) {
-    obj[`--${key}`] = colors[key]
-  }
-  return obj;
-})
-const themeGroups = [
-  {
-    name: 'theme-2',
-    attributes: {
-      // '--pretitle-color': '#ff7200',
-      '--wrapper-bg': 'var(--primary)',
-      '--pretitle-color': 'var(--white)',
-      '--title-color': 'var(--white)',
-      '--body-color': 'var(--white)',
-      '--btn-primary-bg': 'var(--secondary)',
-      '--btn-primary-text': 'var(--white)',
-      '--btn-secondary-bg': 'var(--white)',
-      '--btn-secondary-text': 'var(--black)',
-      '--btn-simple-text': 'var(--white)',
-    }
-  }
-]
+// const styles = computed(() => {
+//   const obj = {}
+//   for (const key in colors) {
+//     obj[`--${key}`] = colors[key]
+//   }
+//   return obj;
+// })
 
-const themes = computed(() => {
-  const obj = {}
+// const themeGroups = [
+//   {
+//     name: 'theme-2',
+//     attributes: {
+//       '--wrapper-bg': 'var(--primary)',
+//       '--pretitle-color': 'var(--white)',
+//       '--title-color': 'var(--white)',
+//       '--body-color': 'var(--white)',
+//       '--btn-primary-bg': 'var(--secondary)',
+//       '--btn-primary-text': 'var(--white)',
+//       '--btn-secondary-bg': 'var(--white)',
+//       '--btn-secondary-text': 'var(--black)',
+//       '--btn-simple-text': 'var(--white)',
+//     }
+//   }
+// ]
 
-  themeGroups.forEach((theme) => {
-    const attributes = theme.attributes
-    obj[`[data-theme='${theme.name}']`] = attributes
-  })
+// const themes = computed(() => {
+//   const obj = {}
+//   themeGroups.forEach((theme) => {
+//     const attributes = theme.attributes
+//     obj[`[data-theme='${theme.name}']`] = attributes
+//   })
+//   return obj
+// })
 
-  return obj
-})
-
-console.log('Styles: ', styles.value)
-console.log('Themes: ', themes.value)
+// console.log('Styles: ', styles.value)
+// console.log('Themes: ', themes.value)
 </script>
 
 <style>
@@ -148,7 +143,7 @@ console.log('Themes: ', themes.value)
   --btn-simple-text: var(--primary);
 } */
 
-[data-theme='theme-1'] {
+/* [data-theme='theme-1'] {
   --wrapper-bg: var(--neutral);
   --pretitle-color: var(--secondary);
   --title-color: var(--primary);
@@ -158,7 +153,7 @@ console.log('Themes: ', themes.value)
   --btn-secondary-bg: var(--primary);
   --btn-secondary-text: var(--white);
   --btn-simple-text: var(--primary);
-}
+} */
 
 /* [data-theme='theme-2'] {
   --wrapper-bg: var(--primary);
@@ -172,7 +167,7 @@ console.log('Themes: ', themes.value)
   --btn-simple-text: var(--white);
 } */
 
-[data-theme='theme-3'] {
+/* [data-theme='theme-3'] {
   --wrapper-bg: var(--secondary);
   --pretitle-color: var(--white);
   --title-color: var(--white);
@@ -182,5 +177,5 @@ console.log('Themes: ', themes.value)
   --btn-secondary-bg: var(--white);
   --btn-secondary-text: var(--primary);
   --btn-simple-text: var(--white);
-}
+} */
 </style>

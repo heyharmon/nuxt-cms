@@ -1,38 +1,20 @@
 // const themes = require('./tailwind/themes-plugin.js') 
 // const forms = require('@tailwindcss/forms')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  // safelist: [
-  //   'wrapper',
-  //   'pretitle',
-  //   'title',
-  //   'body',
-  //   'btn-primary',
-  //   'btn-secondary',
-  //   'btn-simple',
-  // ],
-
   theme: {
-    // colors: {
-    //   primary: 'var(--primary)',
-    //   secondary: 'var(--secondary)',
-    //   accent: 'var(--accent)',
-    //   text: 'var(--text)',
-    //   neutral: 'var(--neutral)',
-    //   white: 'var(--white)',
+    // extend: {
+    //   colors: {
+    //     primary: 'var(--primary)',
+    //     secondary: 'var(--secondary)',
+    //     tertiary: 'var(--tertiary)',
+    //     neutral: 'var(--neutral)',
+    //     black: 'var(--black)',
+    //     grey: 'var(--grey)',
+    //     white: 'var(--white)',
+    //   },
     // },
-
-    extend: {
-      // colors: {
-      //   primary: 'var(--primary)',
-      //   secondary: 'var(--secondary)',
-      //   tertiary: 'var(--tertiary)',
-      //   neutral: 'var(--neutral)',
-      //   black: 'var(--black)',
-      //   grey: 'var(--grey)',
-      //   white: 'var(--white)',
-      // },
-    },
 
     fontSize: {
       'xs':  ['var(--font-size-xs)',   { lineHeight: '1' }],
@@ -88,23 +70,47 @@ module.exports = {
       '96':  'var(--spacing-96)',
     },
   },
+
+  plugins: [
+    // Our own themeing plugin
+    // https://www.protailwind.com/workshops/multi-theme-strategy
+    // themes,
+    plugin(function ({ addBase }) {
+      addBase({
+        ':root': {
+          '--primary': '#32473b',
+          '--secondary': '#ff7200',
+          '--tertiary': '#c7e5fc',
+          '--neutral': '#f5f5f5',
+          '--black': '#000000',
+          '--grey': '#808080',
+          '--white': '#ffffff',
+
+          // '--wrapper-bg': '#ffffff',
+          // '--pretitle-color': '#ff7200',
+          // '--title-color': '#32473b',
+          // '--body-color': '#32473b',
+          // '--btn-primary-bg': '#ff7200',
+          // '--btn-primary-text': '#ffffff',
+          // '--btn-secondary-bg': '#808080',
+          // '--btn-secondary-text': '#ffffff',
+        }
+      })
+    }),
+
+    // Tailwind form styles
+    // https://github.com/tailwindlabs/tailwindcss-forms
+    require('@tailwindcss/forms'),
+  ],
   
   content: [
+    "./**/*.vue",
+    // "./components/blocks/Base/*.{js,vue,ts}",
     // "./components/**/*.{js,vue,ts}",
     // "./layouts/**/*.vue",
     // "./pages/**/*.vue",
     // "./plugins/**/*.{js,ts}",
     // "./nuxt.config.{js,ts}",
     // "./app.vue",
-  ],
-
-  plugins: [
-    // Our own themeing plugin
-    // https://www.protailwind.com/workshops/multi-theme-strategy
-    // themes,
-
-    // Tailwind form styles
-    // https://github.com/tailwindlabs/tailwindcss-forms
-    require('@tailwindcss/forms'),
   ],
 }
