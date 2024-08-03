@@ -2,6 +2,8 @@
   <div :style="styles" class="antialiased">
     <NuxtLoadingIndicator/>
     <NuxtLayout>
+      <!-- <pre>{{ styles }}</pre> -->
+      <!-- <pre>{{ themes }}</pre> -->
       <NuxtPage />
     </NuxtLayout>
 
@@ -70,6 +72,7 @@
 
 <script setup>
 const colors = {
+  'pretitle-color': '#ff7200',
   primary: '#32473b',
   secondary: '#ff7200',
   tertiary: '#c7e5fc',
@@ -89,8 +92,37 @@ const styles = computed(() => {
   }
   return obj;
 })
+const themeGroups = [
+  {
+    name: 'theme-2',
+    attributes: {
+      // '--pretitle-color': '#ff7200',
+      '--wrapper-bg': 'var(--primary)',
+      '--pretitle-color': 'var(--white)',
+      '--title-color': 'var(--white)',
+      '--body-color': 'var(--white)',
+      '--btn-primary-bg': 'var(--secondary)',
+      '--btn-primary-text': 'var(--white)',
+      '--btn-secondary-bg': 'var(--white)',
+      '--btn-secondary-text': 'var(--black)',
+      '--btn-simple-text': 'var(--white)',
+    }
+  }
+]
 
-// console.log('Styles: ', styles.value)
+const themes = computed(() => {
+  const obj = {}
+
+  themeGroups.forEach((theme) => {
+    const attributes = theme.attributes
+    obj[`[data-theme='${theme.name}']`] = attributes
+  })
+
+  return obj
+})
+
+console.log('Styles: ', styles.value)
+console.log('Themes: ', themes.value)
 </script>
 
 <style>
@@ -104,7 +136,7 @@ const styles = computed(() => {
   --white: {{ white }};
 } */
 
-:root {
+/* :root {
   --wrapper-bg: var(--white);
   --pretitle-color: var(--secondary);
   --title-color: var(--primary);
@@ -114,7 +146,7 @@ const styles = computed(() => {
   --btn-secondary-bg: var(--primary);
   --btn-secondary-text: var(--white);
   --btn-simple-text: var(--primary);
-}
+} */
 
 [data-theme='theme-1'] {
   --wrapper-bg: var(--neutral);
@@ -128,7 +160,7 @@ const styles = computed(() => {
   --btn-simple-text: var(--primary);
 }
 
-[data-theme='theme-2'] {
+/* [data-theme='theme-2'] {
   --wrapper-bg: var(--primary);
   --pretitle-color: var(--white);
   --title-color: var(--white);
@@ -138,7 +170,7 @@ const styles = computed(() => {
   --btn-secondary-bg: var(--white);
   --btn-secondary-text: var(--black);
   --btn-simple-text: var(--white);
-}
+} */
 
 [data-theme='theme-3'] {
   --wrapper-bg: var(--secondary);
