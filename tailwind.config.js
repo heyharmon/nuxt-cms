@@ -1,4 +1,4 @@
-const multiThemePlugin = require('./plugins/multi-theme-plugin.js')
+const themesPlugin = require('./tailwind/themes-plugin.js')
 
 module.exports = {
   theme: {
@@ -70,7 +70,7 @@ module.exports = {
   },
 
   plugins: [
-    multiThemePlugin,
+    themesPlugin,
 
     // // Our own themeing plugin
     // // https://www.protailwind.com/workshops/multi-theme-strategy
