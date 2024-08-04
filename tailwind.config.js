@@ -1,5 +1,5 @@
-const themesPlugin = require('./tailwind/themes-plugin.js')
-const theme = require('./tailwind/theme.json')
+// const themesPlugin = require('./tailwind/themes-plugin.js')
+// const theme = require('./tailwind/theme.json')
 
 module.exports = {
   theme: {

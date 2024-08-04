@@ -30,28 +30,28 @@ export default defineNuxtPlugin({
     style.id = "theme";
     
     // Generate CSS color variables
-    let colorVariables = "";
-    for (const key in store.colors) {
-      colorVariables += `--${key}: ${store.colors[key]};`;
-    }
+    let colors = '';
+    store.colors.forEach((color) => {
+      colors += `--${color.name}: ${color.value};`;
+    })
     
-    // Setup themes
+    // Setup block themes
     let themes = ''
     store.themes.forEach((theme) => {
-      themes += `${theme.selector}{`;
+      themes += `${theme.selector}{`
       for (const key in theme.properties) {
-        themes += `--${key}: var(--${theme.properties[key]});`;
+        themes += `--${key}: var(--${theme.properties[key]});`
       }
-      themes += "}";
-    });
+      themes += "}"
+    })
   
     // Add content to the stylesheet
-    style.innerText = `:root{${colorVariables}}`;
+    style.innerText = `:root{${colors}}`;
     style.innerText += themes;
 
     // Append the stylesheet to the head
     document.head.appendChild(style);
-    
+
     // useHead({
     //   link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }]
     // })

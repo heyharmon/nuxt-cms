@@ -1,14 +1,15 @@
 export const useThemeStore = defineStore('theme', {
   state: () => ({
-    colors: {
-      primary: 'red',
-      secondary: 'blue',
-      tertiary: 'yellow',
-      neutral: 'green',
-      black: '#000000',
-      grey: '#808080',
-      white: '#ffffff',
-    },
+    colors: [
+      { name: 'primary', value: 'red',},
+      { name: 'secondary', value: 'blue',},
+      { name: 'tertiary', value: 'yellow',},
+      { name: 'neutral', value: 'green',},
+      { name: 'black', value: '#000000',},
+      { name: 'grey', value: '#808080',},
+      { name: 'white', value: '#ffffff',},
+    ],
+
     themes: [
       {
         name: 'root',
