@@ -1,4 +1,4 @@
-import { useThemeStore } from '@/store/themeStore.js'
+import { useDesignStore } from '@/store/designStore.js'
 
 // export default defineNuxtPlugin(nuxtApp => {
 //     const store = useThemeStore()
@@ -23,38 +23,34 @@ export default defineNuxtPlugin({
   name: 'theme',
   enforce: 'post', // or 'post'
   async setup (nuxtApp) {
-    const store = useThemeStore()
+    const design = useDesignStore()
 
-    // Setup stylesheet
-    const style = document.createElement("style");
-    style.id = "theme";
-    
     // Generate CSS color variables
     let colors = '';
-    store.colors.forEach((color) => {
+    design.colors.forEach((color) => {
       colors += `--${color.name}: ${color.value};`;
     })
     
     // Setup block themes
     let themes = ''
-    store.themes.forEach((theme) => {
+    design.themes.forEach((theme) => {
       themes += `${theme.selector}{`
       for (const key in theme.properties) {
         themes += `--${key}: var(--${theme.properties[key]});`
       }
       themes += "}"
     })
-  
+    
+    // Setup stylesheet
+    const stylesheet = document.createElement("style");
+    stylesheet.id = "theme";
+
     // Add content to the stylesheet
-    style.innerText = `:root{${colors}}`;
-    style.innerText += themes;
+    stylesheet.innerText = `:root{${colors}}`;
+    stylesheet.innerText += themes;
 
     // Append the stylesheet to the head
-    document.head.appendChild(style);
-
-    // useHead({
-    //   link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }]
-    // })
+    document.head.appendChild(stylesheet);
   }
 })
   

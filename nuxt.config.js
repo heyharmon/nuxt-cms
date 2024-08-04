@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   plugins: [
     {
-      src: '~/plugins/themePlugin.js',
+      src: '@/plugins/designPlugin.js',
       mode: 'client' // Important for running in client side only
     }
   ],

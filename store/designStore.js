@@ -1,4 +1,4 @@
-export const useThemeStore = defineStore('theme', {
+export const useDesignStore = defineStore('design', {
   state: () => ({
     colors: [
       { name: 'primary', value: 'red',},
@@ -72,5 +72,5 @@ export const useThemeStore = defineStore('theme', {
 })
 
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useThemeStore, import.meta.hot));
+  import.meta.hot.accept(acceptHMRUpdate(useDesignStore, import.meta.hot));
 }
