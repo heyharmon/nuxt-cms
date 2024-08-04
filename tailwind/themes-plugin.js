@@ -11,17 +11,17 @@ module.exports = plugin.withOptions(
             * Generate color variables in the :root scope
             * by iterating over the `colors` array.
             */
-            addBase({
-                ':root': {
-                    '--primary': `${theme.colors['primary']}`,
-                    '--secondary': `${theme.colors['secondary']}`,
-                    '--tertiary': `${theme.colors['tertiary']}`,
-                    '--neutral': `${theme.colors['neutral']}`,
-                    '--black': `${theme.colors['black']}`,
-                    '--grey': `${theme.colors['grey']}`,
-                    '--white': `${theme.colors['white']}`,
-                },
-            })
+            // addBase({
+            //     ':root': {
+            //         '--primary': `${theme.colors['primary']}`,
+            //         '--secondary': `${theme.colors['secondary']}`,
+            //         '--tertiary': `${theme.colors['tertiary']}`,
+            //         '--neutral': `${theme.colors['neutral']}`,
+            //         '--black': `${theme.colors['black']}`,
+            //         '--grey': `${theme.colors['grey']}`,
+            //         '--white': `${theme.colors['white']}`,
+            //     },
+            // })
 
             /*
             * Generate the `data-theme` CSS blocks below

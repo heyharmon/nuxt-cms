@@ -1,5 +1,5 @@
 <template>
-  <div :style="styles" class="antialiased">
+  <div class="antialiased">
     <NuxtLoadingIndicator/>
     <NuxtLayout>
       <!-- <pre>{{ styles }}</pre> -->
@@ -34,13 +34,13 @@
 </template>
 
 <script setup>
-const primary = 'red'
-const secondary = 'blue'
-const tertiary = 'yellow'
-const neutral = 'green'
-const black = '#000000'
-const grey = '#808080'
-const white = '#ffffff'
+// const primary = 'red'
+// const secondary = 'blue'
+// const tertiary = 'yellow'
+// const neutral = 'green'
+// const black = '#000000'
+// const grey = '#808080'
+// const white = '#ffffff'
 
 // const styles = computed(() => {
 //   const obj = {}
