@@ -27,8 +27,7 @@ const props = defineProps({
 })
 
 const baseClasses = `
-  heading
-  font-bold
+  title
   text-pretty
   tracking-normal
 `

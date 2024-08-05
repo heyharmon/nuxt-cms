@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-icon',
     'nuxt-headlessui',
+    "@nuxt/fonts",
     '@nuxt/image-edge',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
@@ -74,6 +75,13 @@ export default defineNuxtConfig({
 
   pinia: {
     storesDirs: ['./store'],
+  },
+
+  fonts: {
+    // priority: ['bunny', 'google'],
+    // defaults: {
+    //   weights: [100, 400, 900],
+    // },
   },
   
   // build: {
