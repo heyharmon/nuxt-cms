@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BaseHeading>Sitemap</BaseHeading>
+    <BaseTitle>Sitemap</BaseTitle>
 
     <BaseText>The page</BaseText>
 

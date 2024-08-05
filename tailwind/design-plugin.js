@@ -34,7 +34,7 @@ module.exports = plugin.withOptions(
                         '--wrapper-bg': `var(--${theme.properties['wrapper-bg']})`,
                         '--pretitle-color': `var(--${theme.properties['pretitle-color']})`,
                         '--title-color': `var(--${theme.properties['title-color']})`,
-                        '--body-color': `var(--${theme.properties['body-color']})`,
+                        '--text-color': `var(--${theme.properties['text-color']})`,
                         '--btn-primary-bg': `var(--${theme.properties['btn-primary-bg']})`,
                         '--btn-primary-text': `var(--${theme.properties['btn-primary-text']})`,
                         '--btn-secondary-bg': `var(--${theme.properties['btn-secondary-bg']})`,

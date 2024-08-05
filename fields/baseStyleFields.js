@@ -2,13 +2,7 @@ const BaseStyleFields = [
   {
     label: 'Theme',
     path: 'styles.theme',
-    options: [
-      // { value: null, label: 'Default' },
-      { value: 'theme-1', label: 'Theme 1' },
-      { value: 'theme-2', label: 'Theme 2' },
-      { value: 'theme-3', label: 'Theme 3' },
-    ],
-    component: 'SelectButtonsField',
+    component: 'ThemeSelectField',
   },
   {
     label: 'Padding',

@@ -22,7 +22,7 @@
         --wrapper-bg: var(--neutral);
         --pretitle-color: var(--secondary);
         --title-color: var(--primary);
-        --body-color: var(--primary);
+        --text-color: var(--primary);
         --btn-primary-bg: var(--secondary);
         --btn-primary-text: var(--white);
         --btn-secondary-bg: var(--primary);
@@ -78,7 +78,7 @@
 //       '--wrapper-bg': 'var(--primary)',
 //       '--pretitle-color': 'var(--white)',
 //       '--title-color': 'var(--white)',
-//       '--body-color': 'var(--white)',
+//       '--text-color': 'var(--white)',
 //       '--btn-primary-bg': 'var(--secondary)',
 //       '--btn-primary-text': 'var(--white)',
 //       '--btn-secondary-bg': 'var(--white)',

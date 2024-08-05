@@ -4,12 +4,12 @@
 
         <div class="mt-8">
             <div class="flex flex-col gap-6">
-                <BaseHeading element="h1" content="The heading size 1"></BaseHeading>
-                <BaseHeading element="h2" content="The heading size 2"></BaseHeading>
-                <BaseHeading element="h3" content="The heading size 3"></BaseHeading>
-                <BaseHeading element="h4" content="The heading size 4"></BaseHeading>
-                <BaseHeading element="h5" content="The heading size 5"></BaseHeading>
-                <BaseHeading element="h6" content="The heading size 6"></BaseHeading>
+                <BaseTitle element="h1" content="The heading size 1"></BaseTitle>
+                <BaseTitle element="h2" content="The heading size 2"></BaseTitle>
+                <BaseTitle element="h3" content="The heading size 3"></BaseTitle>
+                <BaseTitle element="h4" content="The heading size 4"></BaseTitle>
+                <BaseTitle element="h5" content="The heading size 5"></BaseTitle>
+                <BaseTitle element="h6" content="The heading size 6"></BaseTitle>
             </div>
         </div>
     </section>

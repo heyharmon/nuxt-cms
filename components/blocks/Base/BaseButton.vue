@@ -56,7 +56,7 @@ const variantClasses = {
   primary: 'btn-primary hover:bg-primary-700 shadow-sm',
   secondary: 'btn-secondary hover:bg-secondary-700 shadow-sm',
   // light: 'btn bg-white hover:bg-primary-200 shadow-sm',
-  // ghost: 'body-color bg-transparent ring-2 ring-inset ring-white hover:bg-primary-200',
+  // ghost: 'text-color bg-transparent ring-2 ring-inset ring-white hover:bg-primary-200',
   simple: 'btn-simple bg-transparent pl-0 pr-0 pt-0 pb-0',
 }
 

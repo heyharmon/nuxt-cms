@@ -15,12 +15,12 @@
     .title { 
         color: var(--title-color);
         /* font-family: 'Cabinet Grotesk', sans-serif; */
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         /* font-weight: 900; */
     }
 
-    .body { 
-        color: var(--body-color);
+    .text { 
+        color: var(--text-color);
     }
 
     .btn-primary { 
