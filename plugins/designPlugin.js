@@ -28,7 +28,7 @@ export default defineNuxtPlugin({
   //   // Generate CSS color variables
   //   let colors = '';
   //   design.colors.forEach((color) => {
-  //     colors += `--${color.name}: ${color.hex};`;
+  //     colors += `--${color.name}: ${color.color};`;
   //   })
     
   //   // Setup block themes

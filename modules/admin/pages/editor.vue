@@ -117,19 +117,21 @@ let styleElement = null;
 
 // Generate the CSS string for colors and themes
 const generateCssVariables = (design) => {
+  // Output colors
   let css = ':root {\n';
   design.colors.forEach(color => {
-    css += `  --${color.name}: ${color.hex};\n`;
+    css += `  --${color.name}: ${color.color};\n`;
   });
   css += '}\n';
 
+  // Output themes
   design.themes.forEach(theme => {
-    css += `${theme.selector} {\n`;
-    for (const [property, colorName] of Object.entries(theme.properties)) {
-      css += `  --${property}: var(--${colorName});\n`;
-    }
-    css += '}\n';
-  });
+    css += `${theme.selector} {\n`
+    theme.properties.forEach(property => {
+      css += `  --${property.name}: var(--${property.value});\n`
+    })
+    css += '}\n'
+  })
 
   return css;
 };
@@ -148,10 +150,10 @@ watch(() => designStore.design, (design) => {
 }, { deep: true });
 
 // On component mount, create the style element and initialize CSS variables
-onMounted(() => {
-  styleElement = document.createElement('style');
-  styleElement.type = 'text/css';
-  document.head.appendChild(styleElement);
-  updateCssVariables(designStore.design);
-});
+// onMounted(() => {
+//   styleElement = document.createElement('style');
+//   styleElement.type = 'text/css';
+//   document.head.appendChild(styleElement);
+//   updateCssVariables(designStore.design);
+// });
 </script>
