@@ -59,11 +59,11 @@ const fieldGroups = ref({
           path: 'design.colors',
           component: 'DesignColorRepeaterField',
         },
-        // {
-        //   label: 'Themes', // This let's you create as many themes as you want. Thumbnail like wordpress.com (https://share.zight.com/yAuzwRAQ).
-        //   path: 'design.themes',
-        //   component: 'DesignThemeRepeaterField',
-        // },
+        {
+          label: 'Themes', // This let's you create as many themes as you want. Thumbnail like wordpress.com (https://share.zight.com/yAuzwRAQ).
+          path: 'design.themes',
+          component: 'DesignThemeRepeaterField',
+        },
       ]
     },
     {

@@ -30,34 +30,20 @@
   
   const props = defineProps({
     label: String, // Label for the field
-    path: String, // Path to buttons array in block data
+    path: String, // Path to colors array in block data TODO: Remove, not using?
   })
   
   const designStore = useDesignStore()
-  // const buttons = computed(() => {
-  //   return editorStore.getField(props.path)
-  // })
   
   function addNewColor() {
-    // Set content object with empty buttons array
-    // if (!editorStore.activeBlock.data.content) {
-    //   setField({
-    //     object: editorStore.activeBlock.data,
-    //     path: 'content',
-    //     value: {
-    //       buttons: []
-    //     }
-    //   })
-    // }
-    
-    buttons.push({ 
-      label: 'Button label', 
-      destination: '/' 
+    designStore.design.colors.push({ 
+      name: 'New color', 
+      color: '' 
     })
   }
   
   function destroyColor(index) {
-    buttons.splice(index, 1)
+    designStore.design.colors.splice(index, 1)
   }
   </script>
   
