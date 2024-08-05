@@ -56,6 +56,7 @@
 
     <template v-slot:left>
       <BlocksPanel v-if="editorStore.show.blocksPanel"/>
+      <DesignPanel v-if="editorStore.show.designPanel"/>
       <FieldsPanel v-if="editorStore.activeBlockId" :group="editorStore.activeBlock.group"/>
       <!-- <pre>{{ editorStore.activeBlock }}</pre> -->
     </template>
@@ -78,7 +79,9 @@
 
 <script setup>
 // import { usePageStore } from '@/store/pageStore.js'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useEditorStore } from '@/modules/admin/store/editorStore'
+import { useDesignStore } from '@/modules/admin/store/designStore'
 import EditorLayout from '@/modules/admin/layouts/EditorLayout.vue'
 import Block from '@/components/blocks/Block.vue'
 import BlockWrapper from '@/modules/admin/components/BlockWrapper.vue'
@@ -96,9 +99,47 @@ definePageMeta({
 
 
 const editorStore = useEditorStore()
+const designStore = useDesignStore()
 // const pageStore = usePageStore()
 
 const { data: page, pending: pagePending, error: pageError } = await useAsyncData('page', () =>
   editorStore.showPage('/')
 );
+
+/*
+ * Dynamic css rules
+ 
+ */
+let styleElement = null;
+
+// Generate the CSS string for :root
+const generateCssVariables = (colors) => {
+  let cssString = ':root {\n';
+  colors.forEach(color => {
+    cssString += `  --${color.name}: ${color.hex};\n`;
+  });
+  cssString += '}';
+  return cssString;
+};
+
+// Update the CSS variables
+const updateCssVariables = (colors) => {
+  const cssVariablesString = generateCssVariables(colors);
+  if (styleElement) {
+    styleElement.innerHTML = cssVariablesString;
+  }
+};
+
+// Watch for changes in the colors array
+watch(() => designStore.colors, (newColors) => {
+  updateCssVariables(newColors);
+}, { deep: true });
+
+// On component mount, create the style element and initialize CSS variables
+onMounted(() => {
+  styleElement = document.createElement('style');
+  styleElement.type = 'text/css';
+  document.head.appendChild(styleElement);
+  updateCssVariables(designStore.colors);
+});
 </script>

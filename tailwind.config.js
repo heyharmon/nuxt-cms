@@ -1,5 +1,6 @@
-// const themesPlugin = require('./tailwind/themes-plugin.js')
-// const theme = require('./tailwind/theme.json')
+const formsPlugin = require('@tailwindcss/forms')
+const themesPlugin = require('./tailwind/themes-plugin.js')
+const theme = require('./tailwind/theme.json')
 
 module.exports = {
   theme: {
@@ -71,8 +72,8 @@ module.exports = {
   },
 
   plugins: [
-    // themesPlugin({ theme: theme }),
-    require('@tailwindcss/forms'),
+    formsPlugin,
+    themesPlugin({ theme: theme }),
   ],
   
   content: [

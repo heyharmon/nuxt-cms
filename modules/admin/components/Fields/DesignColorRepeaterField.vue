@@ -1,0 +1,63 @@
+<template>
+    <div class="margin-bottom-sm">
+      <label v-if="label" class="block text-sm font-medium leading-6 text-gray-900" :for="label">{{ label }}</label>
+      <div v-if="designStore.colors && designStore.colors.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
+        <DesignColorField 
+          v-for="(color, index) in designStore.colors"
+          :color="color"
+          :index="index"
+          @destroy="destroyColor(index)"
+        />
+      </div>
+  
+      <!-- Empty state -->
+      <div v-else class="mt-2">
+        <button 
+          @click="addNewColor()"
+          type="button" 
+          class="mt-2 relative block w-full rounded-lg text-gray-400 border-2 border-dashed border-gray-300 p-4 hover:bg-gray-50 focus:border-solid focus:border-indigo-500"
+        >
+          <Icon name="heroicons:link" class="mx-auto h-6 w-6" />
+          <span class="mt-1 block text-xs">Add color</span>
+        </button>
+      </div>
+    </div>
+  </template>
+  
+  <script setup>
+  import { useDesignStore } from '@/modules/admin/store/designStore'
+  import DesignColorField from '@/modules/admin/components/Fields/DesignColorField.vue'
+  
+  const props = defineProps({
+    label: String, // Label for the field
+    path: String, // Path to buttons array in block data
+  })
+  
+  const designStore = useDesignStore()
+  // const buttons = computed(() => {
+  //   return editorStore.getField(props.path)
+  // })
+  
+  function addNewColor() {
+    // Set content object with empty buttons array
+    // if (!editorStore.activeBlock.data.content) {
+    //   setField({
+    //     object: editorStore.activeBlock.data,
+    //     path: 'content',
+    //     value: {
+    //       buttons: []
+    //     }
+    //   })
+    // }
+    
+    buttons.push({ 
+      label: 'Button label', 
+      destination: '/' 
+    })
+  }
+  
+  function destroyColor(index) {
+    buttons.splice(index, 1)
+  }
+  </script>
+  

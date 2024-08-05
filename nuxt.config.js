@@ -2,12 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
-  plugins: [
-    {
-      src: '@/plugins/designPlugin.js',
-      mode: 'client' // Important for running in client side only
-    }
-  ],
+  // plugins: [
+  //   {
+  //     src: '@/plugins/designPlugin.js',
+  //     mode: 'client' // Important for running in client side only
+  //   }
+  // ],
   
   hooks: {
     'pages:extend': (pages) => {

@@ -1,13 +1,13 @@
 export const useDesignStore = defineStore('design', {
   state: () => ({
     colors: [
-      { name: 'primary', value: 'red',},
-      { name: 'secondary', value: 'blue',},
-      { name: 'tertiary', value: 'yellow',},
-      { name: 'neutral', value: 'green',},
-      { name: 'black', value: '#000000',},
-      { name: 'grey', value: '#808080',},
-      { name: 'white', value: '#ffffff',},
+      { name: 'primary', hex: 'red',},
+      { name: 'secondary', hex: 'blue',},
+      { name: 'tertiary', hex: 'yellow',},
+      { name: 'neutral', hex: 'green',},
+      { name: 'black', hex: '#000000',},
+      { name: 'grey', hex: '#808080',},
+      { name: 'white', hex: '#ffffff',},
     ],
 
     themes: [

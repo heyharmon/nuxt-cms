@@ -42,7 +42,7 @@ const buttons = editorStore.getField(props.path)
 function addNewButton() {
   // Set content object with empty buttons array
   // if (!editorStore.activeBlock.data.content) {
-  //   setField({
+  //   setValue({
   //     object: editorStore.activeBlock.data,
   //     path: 'content',
   //     value: {
