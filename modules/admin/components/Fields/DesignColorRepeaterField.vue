@@ -1,9 +1,9 @@
 <template>
     <div class="margin-bottom-sm">
       <label v-if="label" class="block text-sm font-medium leading-6 text-gray-900" :for="label">{{ label }}</label>
-      <div v-if="designStore.colors && designStore.colors.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
+      <div v-if="designStore.design.colors && designStore.design.colors.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
         <DesignColorField 
-          v-for="(color, index) in designStore.colors"
+          v-for="(color, index) in designStore.design.colors"
           :color="color"
           :index="index"
           @destroy="destroyColor(index)"

@@ -107,32 +107,44 @@ const { data: page, pending: pagePending, error: pageError } = await useAsyncDat
 );
 
 /*
- * Dynamic css rules
- 
- */
+* * * * * * * * * * * 
+* Dynamic css rules
+* * * * * * * * * * * 
+*/
+
+// Create an empty style element
 let styleElement = null;
 
-// Generate the CSS string for :root
-const generateCssVariables = (colors) => {
-  let cssString = ':root {\n';
-  colors.forEach(color => {
-    cssString += `  --${color.name}: ${color.hex};\n`;
+// Generate the CSS string for colors and themes
+const generateCssVariables = (design) => {
+  let css = ':root {\n';
+  design.colors.forEach(color => {
+    css += `  --${color.name}: ${color.hex};\n`;
   });
-  cssString += '}';
-  return cssString;
+  css += '}\n';
+
+  design.themes.forEach(theme => {
+    css += `${theme.selector} {\n`;
+    for (const [property, colorName] of Object.entries(theme.properties)) {
+      css += `  --${property}: var(--${colorName});\n`;
+    }
+    css += '}\n';
+  });
+
+  return css;
 };
 
 // Update the CSS variables
-const updateCssVariables = (colors) => {
-  const cssVariablesString = generateCssVariables(colors);
+const updateCssVariables = (design) => {
+  const cssVariablesString = generateCssVariables(design);
   if (styleElement) {
     styleElement.innerHTML = cssVariablesString;
   }
 };
 
-// Watch for changes in the colors array
-watch(() => designStore.colors, (newColors) => {
-  updateCssVariables(newColors);
+// Watch for changes on the design
+watch(() => designStore.design, (design) => {
+  updateCssVariables(design);
 }, { deep: true });
 
 // On component mount, create the style element and initialize CSS variables
@@ -140,6 +152,6 @@ onMounted(() => {
   styleElement = document.createElement('style');
   styleElement.type = 'text/css';
   document.head.appendChild(styleElement);
-  updateCssVariables(designStore.colors);
+  updateCssVariables(designStore.design);
 });
 </script>
