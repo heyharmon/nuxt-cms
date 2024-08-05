@@ -150,10 +150,10 @@ watch(() => designStore.design, (design) => {
 }, { deep: true });
 
 // On component mount, create the style element and initialize CSS variables
-// onMounted(() => {
-//   styleElement = document.createElement('style');
-//   styleElement.type = 'text/css';
-//   document.head.appendChild(styleElement);
-//   updateCssVariables(designStore.design);
-// });
+onMounted(() => {
+  styleElement = document.createElement('style');
+  styleElement.type = 'text/css';
+  document.head.appendChild(styleElement);
+  updateCssVariables(designStore.design);
+});
 </script>
