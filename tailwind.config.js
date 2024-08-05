@@ -1,8 +1,13 @@
 const formsPlugin = require('@tailwindcss/forms')
-const themesPlugin = require('./tailwind/themes-plugin.js')
-const theme = require('./tailwind/theme.json')
+const designPlugin = require('./tailwind/design-plugin.js')
+const design = require('./tailwind/design.json')
 
 module.exports = {
+  plugins: [
+    formsPlugin,
+    // designPlugin({ design: design }),
+  ],
+
   theme: {
     // extend: {
     //   colors: {
@@ -70,11 +75,6 @@ module.exports = {
       '96':  'var(--spacing-96)',
     },
   },
-
-  plugins: [
-    formsPlugin,
-    themesPlugin({ theme: theme }),
-  ],
   
   content: [
     "./**/*.vue",

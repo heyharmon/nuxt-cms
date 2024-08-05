@@ -33,17 +33,6 @@
     .btn-simple { 
         color: var(--btn-simple-text);
     }
-
-    /* [data-theme='theme-1'] {
-        --wrapper-bg: var(--neutral);
-        --pretitle-color: var(--primary);
-        --title-color: var(--black);
-        --body-color: var(--grey);
-        --btn-primary-bg: var(--primary);
-        --btn-primary-text: var(--white);
-        --btn-secondary-bg: var(--secondary);
-        --btn-secondary-text: var(--white);
-    } */
     
     :root {
         /* Fluid font size variables

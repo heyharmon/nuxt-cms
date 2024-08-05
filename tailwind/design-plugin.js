@@ -5,7 +5,8 @@ const plugin = require('tailwindcss/plugin')
 // ------------------------------
 module.exports = plugin.withOptions(
     function(options) {
-        const { theme } = options
+        const { design } = options
+        
         return function ({ addBase }) {
             /* 
             * Generate color variables in the :root scope
@@ -13,13 +14,13 @@ module.exports = plugin.withOptions(
             */
             addBase({
                 ':root': {
-                    '--primary': `${theme.colors['primary']}`,
-                    '--secondary': `${theme.colors['secondary']}`,
-                    '--tertiary': `${theme.colors['tertiary']}`,
-                    '--neutral': `${theme.colors['neutral']}`,
-                    '--black': `${theme.colors['black']}`,
-                    '--grey': `${theme.colors['grey']}`,
-                    '--white': `${theme.colors['white']}`,
+                    '--primary': `${design.colors['primary']}`,
+                    '--secondary': `${design.colors['secondary']}`,
+                    '--tertiary': `${design.colors['tertiary']}`,
+                    '--neutral': `${design.colors['neutral']}`,
+                    '--black': `${design.colors['black']}`,
+                    '--grey': `${design.colors['grey']}`,
+                    '--white': `${design.colors['white']}`,
                 },
             })
 
@@ -27,7 +28,7 @@ module.exports = plugin.withOptions(
             * Generate the `data-theme` CSS blocks below
             * by iterating over the `themes` array.
             */
-            theme.themes.forEach((theme) => {
+            design.themes.forEach((theme) => {
                 addBase({
                     [theme.selector]: {
                         '--wrapper-bg': `var(--${theme.properties['wrapper-bg']})`,
@@ -43,33 +44,4 @@ module.exports = plugin.withOptions(
             })
         }
     }
-    // function(options) {
-    //     return {
-    //         theme: {}
-    //     }
-    // }
-    
-
-    
-
-    // addBase({
-    //     ':root': {
-    //         '--primary': '#32473b',
-    //         '--secondary': '#ff7200',
-    //         '--tertiary': '#c7e5fc',
-    //         '--neutral': '#f5f5f5',
-    //         '--black': '#000000',
-    //         '--grey': '#808080',
-    //         '--white': '#ffffff',
-
-    //         '--wrapper-bg': 'var(--white)',
-    //         '--pretitle-color': 'var(--secondary)',
-    //         '--title-color': 'var(--primary)',
-    //         '--body-color': 'var(--primary)',
-    //         '--btn-primary-bg': 'var(--secondary)',
-    //         '--btn-primary-text': 'var(--white)',
-    //         '--btn-secondary-bg': 'var(--grey)',
-    //         '--btn-secondary-text': 'var(--primary)',
-    //     },
-    // })
 )
