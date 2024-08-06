@@ -24,7 +24,7 @@
     </div>
 
     <!-- Theme editor modal -->
-    <AppModal v-if="open" @close="open = false" :title="`Theme ${theme.name}`" size="sm">
+    <AppModal v-if="open" @close="open = false" :title="`Theme ${theme.name}`" size="md">
       <div class="flex flex-col gap-y-5 p-8">
         <AppInput label="Name" v-model="theme.name"/>
         <AppInput label="Selector" v-model="theme.selector"/>

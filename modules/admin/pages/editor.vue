@@ -124,9 +124,15 @@ const generateStylesheet = (design) => {
   });
   css += '}\n';
 
+  // Output default theme
+  css += `:root {\n`
+  design.defaultTheme.properties.forEach(property => {
+    css += `  --${property.name}: var(--${property.value});\n`
+  })
+
   // Output themes
   design.themes.forEach(theme => {
-    css += `${theme.selector} {\n`
+    css += `[data-theme="${theme.name}"] {\n`
     theme.properties.forEach(property => {
       css += `  --${property.name}: var(--${property.value});\n`
     })

@@ -17,22 +17,23 @@ export const useDesignStore = defineStore('design', {
         { name: 'grey', hex: '#808080'},
         { name: 'white', hex: '#ffffff'},
       ],
-  
+      
+      defaultTheme: {
+        name: 'root',
+        selector: ':root',
+        properties: [
+          { name: 'wrapper-bg', value: 'white' },
+          { name: 'pretitle-color', value: 'secondary' },
+          { name: 'title-color', value: 'primary' },
+          { name: 'text-color', value: 'primary' },
+          { name: 'btn-primary-bg', value: 'secondary' },
+          { name: 'btn-primary-text', value: 'white' },
+          { name: 'btn-secondary-bg', value: 'grey' },
+          { name: 'btn-secondary-text', value: 'primary' },
+        ]
+      },
+      
       themes: [
-        {
-          name: 'root',
-          selector: ':root',
-          properties: [
-            { name: 'wrapper-bg', value: 'white' },
-            { name: 'pretitle-color', value: 'secondary' },
-            { name: 'title-color', value: 'primary' },
-            { name: 'text-color', value: 'primary' },
-            { name: 'btn-primary-bg', value: 'secondary' },
-            { name: 'btn-primary-text', value: 'white' },
-            { name: 'btn-secondary-bg', value: 'grey' },
-            { name: 'btn-secondary-text', value: 'primary' },
-          ]
-        },
         {
           name: 'theme-1',
           selector: '[data-theme="theme-1"]',
