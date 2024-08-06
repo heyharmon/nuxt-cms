@@ -2,16 +2,15 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-
-.wrapper { 
+.theme-wrapper { 
     background-color: var(--wrapper-bg);
 }
 
-.pretitle { 
+.theme-pretitle { 
     color: var(--pretitle-color);
 }
 
-.title { 
+.theme-title { 
     color: var(--title-color);
     font-weight: 600;
     /* font-family: 'Cabinet Grotesk', sans-serif; */
@@ -19,21 +18,21 @@
     /* font-weight: 900; */
 }
 
-.text { 
+.theme-text { 
     color: var(--text-color);
 }
 
-.btn-primary { 
+.theme-btn-primary { 
     background-color: var(--btn-primary-bg);
     color: var(--btn-primary-text);
 }
 
-.btn-secondary { 
+.theme-btn-secondary { 
     background-color: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
 }
 
-.btn-simple { 
+.theme-btn-simple { 
     color: var(--btn-simple-text);
 }
 

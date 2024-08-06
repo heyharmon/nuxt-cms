@@ -2,7 +2,7 @@ const BaseStyleFields = [
   {
     label: 'Theme',
     path: 'styles.theme',
-    component: 'ThemeSelectField',
+    component: 'BlockThemeField',
   },
   {
     label: 'Padding',

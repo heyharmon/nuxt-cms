@@ -5,9 +5,9 @@
         :class="`${alignmentClasses[alignment]}`" 
     >
         <div>
-            <BaseText v-bind="pretitle" class="pretitle mb-3"/>
-            <BaseTitle v-bind="title" class="mb-4"/>
-            <BaseText v-bind="body"/>
+            <BaseText v-bind="pretitle" class="theme-pretitle mb-3"/>
+            <BaseTitle v-bind="title" class="theme-title mb-4"/>
+            <BaseText v-bind="body" class="theme-text"/>
             <BaseButtonRepeater v-if="buttons.length" :buttons="buttons" class="mt-8"/>
         </div>
     </div>

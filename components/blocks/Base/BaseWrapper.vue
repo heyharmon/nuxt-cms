@@ -2,7 +2,7 @@
   <section 
     :data-theme="theme" 
     :class="`${PaddingTop[padding.top]} ${PaddingBottom[padding.bottom]}`"
-    class="wrapper relative isolate overflow-hidden bg-color"
+    class="theme-wrapper relative isolate overflow-hidden bg-color"
   >
     <BaseBackground v-bind="background"/>
     <slot/>

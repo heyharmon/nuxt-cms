@@ -1,7 +1,7 @@
 <template>
     <div class="margin-bottom-sm">
       <label v-if="label" class="block text-sm font-medium leading-6 text-gray-900" :for="label">{{ label }}</label>
-      <div v-if="designStore.design.themes && designStore.design.themes.length" class="mt-2 overflow-hidden rounded-md border border-gray-300 bg-white">
+      <div v-if="designStore.design.themes && designStore.design.themes.length" class="flex flex-col gap-3 mt-2">
         <DesignThemeField
           v-for="(theme, index) in designStore.design.themes"
           :theme="theme"

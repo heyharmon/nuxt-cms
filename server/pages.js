@@ -57,7 +57,7 @@ export default [
             height: 720,
           },
           styles: {
-            theme: null,
+            theme: 'default',
             padding: {
               top: 'none',
               bottom: 'none',
@@ -156,6 +156,7 @@ export default [
             buttons: [],
           },
           styles: {
+            theme: 'default',
             background: {
               overlay: false,
               image: null,
@@ -411,14 +412,14 @@ export default [
             },
             buttons: [
               {
-                label: 'Bold',
+                label: 'Primary',
                 destination: '/',
-                variant: 'bold',
+                variant: 'primary',
               },
               {
-                label: 'Ghost',
+                label: 'Simple',
                 destination: '/',
-                variant: 'ghost',
+                variant: 'simple',
               },
             ],
           },
@@ -439,6 +440,7 @@ export default [
             height: 720,
           },
           styles: {
+            theme: 'default',
             padding: {
               top: '6xl',
               bottom: '6xl',
@@ -477,7 +479,7 @@ export default [
               {
                 label: 'Learn more',
                 destination: '/page-1',
-                variant: 'ghost',
+                variant: 'simple',
               }
             ],
           },
@@ -498,7 +500,7 @@ export default [
             height: 400,
           },
           styles: {
-            theme: null,
+            theme: 'default',
             padding: {
               top: '6xl',
               bottom: '6xl',

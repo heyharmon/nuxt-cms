@@ -1,7 +1,7 @@
 <template>
   <div 
     @click="open = true" 
-    class="group flex items-center justify-between border-b border-gray-300 last:border-0 cursor-pointer hover:bg-gray-50 px-2 py-3"
+    class="group flex items-center justify-between border-b last:border-0 cursor-pointer hover:bg-gray-50 px-2 py-3"
   >
     <div class="flex items-center">
       <!-- Drag handle -->

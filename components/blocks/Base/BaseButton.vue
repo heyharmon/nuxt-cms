@@ -53,14 +53,15 @@ const baseClasses = `
 `
 
 const variantClasses = {
-  primary: 'btn-primary hover:bg-primary-700 shadow-sm',
-  secondary: 'btn-secondary hover:bg-secondary-700 shadow-sm',
+  primary: 'theme-btn-primary hover:bg-primary-700 shadow-sm',
+  secondary: 'theme-btn-secondary hover:bg-secondary-700 shadow-sm',
   // light: 'btn bg-white hover:bg-primary-200 shadow-sm',
   // ghost: 'text-color bg-transparent ring-2 ring-inset ring-white hover:bg-primary-200',
-  simple: 'btn-simple bg-transparent pl-0 pr-0 pt-0 pb-0',
+  simple: 'theme-btn-simple bg-transparent pl-0 pr-0 pt-0 pb-0',
 }
 
 const sizeClasses = {
+  xs: 'px-1 py-0.5 text-xs',
 	sm: 'px-3 py-1.5 text-sm',
   base: 'px-4 py-2.5',
   lg: 'px-8 py-4 text-md',

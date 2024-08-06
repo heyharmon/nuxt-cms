@@ -18,22 +18,37 @@ export const useDesignStore = defineStore('design', {
         { label: 'white', value: '#ffffff'},
       ],
       
-      defaultTheme: {
-        name: 'root',
-        selector: ':root',
-        properties: [
-          { name: 'wrapper-bg', variable: 'white' },
-          { name: 'pretitle-color', variable: 'secondary' },
-          { name: 'title-color', variable: 'primary' },
-          { name: 'text-color', variable: 'primary' },
-          { name: 'btn-primary-bg', variable: 'secondary' },
-          { name: 'btn-primary-text', variable: 'white' },
-          { name: 'btn-secondary-bg', variable: 'grey' },
-          { name: 'btn-secondary-text', variable: 'primary' },
-        ]
-      },
+      // defaultTheme: {
+      //   name: 'root',
+      //   selector: ':root',
+      //   properties: [
+      //     { name: 'wrapper-bg', variable: 'white' },
+      //     { name: 'pretitle-color', variable: 'secondary' },
+      //     { name: 'title-color', variable: 'primary' },
+      //     { name: 'text-color', variable: 'primary' },
+      //     { name: 'btn-primary-bg', variable: 'secondary' },
+      //     { name: 'btn-primary-text', variable: 'white' },
+      //     { name: 'btn-secondary-bg', variable: 'grey' },
+      //     { name: 'btn-secondary-text', variable: 'primary' },
+      //   ]
+      // },
 
       themes: [
+        {
+          name: 'default',
+          selector: ':root',
+          properties: [
+            { name: 'wrapper-bg', variable: 'white' },
+            { name: 'pretitle-color', variable: 'secondary' },
+            { name: 'title-color', variable: 'primary' },
+            { name: 'text-color', variable: 'primary' },
+            { name: 'btn-primary-bg', variable: 'secondary' },
+            { name: 'btn-primary-text', variable: 'white' },
+            { name: 'btn-secondary-bg', variable: 'grey' },
+            { name: 'btn-secondary-text', variable: 'primary' },
+            { name: 'btn-simple-text', variable: 'primary' },
+          ]
+        },
         {
           name: 'theme-1',
           selector: '[data-theme="theme-1"]',
@@ -46,6 +61,7 @@ export const useDesignStore = defineStore('design', {
             { name: 'btn-primary-text', variable: 'white' },
             { name: 'btn-secondary-bg', variable: 'grey' },
             { name: 'btn-secondary-text', variable: 'primary' },
+            { name: 'btn-simple-text', variable: 'primary' },
           ]
         },
         {
@@ -60,6 +76,7 @@ export const useDesignStore = defineStore('design', {
             { name: 'btn-primary-text', variable: 'white' },
             { name: 'btn-secondary-bg', variable: 'grey' },
             { name: 'btn-secondary-text', variable: 'primary' },
+            { name: 'btn-simple-text', variable: 'white' },
           ]
         },
         {
@@ -74,6 +91,7 @@ export const useDesignStore = defineStore('design', {
             { name: 'btn-primary-text', variable: 'primary' },
             { name: 'btn-secondary-bg', variable: 'grey' },
             { name: 'btn-secondary-text', variable: 'primary' },
+            { name: 'btn-simple-text', variable: 'primary' },
           ]
         }
       ]

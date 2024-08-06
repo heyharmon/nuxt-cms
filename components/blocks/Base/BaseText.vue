@@ -28,7 +28,6 @@ const props = defineProps({
 })
 
 const baseClasses = `
-  text 
   text-balance 
   leading-normal
 `
