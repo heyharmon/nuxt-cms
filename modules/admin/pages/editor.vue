@@ -113,14 +113,14 @@ const { data: page, pending: pagePending, error: pageError } = await useAsyncDat
 */
 
 // Create an empty style element
-let styleElement = null;
+let stylesheet = null;
 
 // Generate the CSS string for colors and themes
-const generateCssVariables = (design) => {
-  // Output colors
+const generateStylesheet = (design) => {
+  // Output color variables
   let css = ':root {\n';
   design.colors.forEach(color => {
-    css += `  --${color.name}: ${color.color};\n`;
+    css += `  --${color.name}: ${color.hex};\n`;
   });
   css += '}\n';
 
@@ -137,23 +137,23 @@ const generateCssVariables = (design) => {
 };
 
 // Update the CSS variables
-const updateCssVariables = (design) => {
-  const cssVariablesString = generateCssVariables(design);
-  if (styleElement) {
-    styleElement.innerHTML = cssVariablesString;
+const updateStylesheet = (design) => {
+  const cssVariablesString = generateStylesheet(design);
+  if (stylesheet) {
+    stylesheet.innerHTML = cssVariablesString;
   }
 };
 
 // Watch for changes on the design
 watch(() => designStore.design, (design) => {
-  updateCssVariables(design);
+  updateStylesheet(design);
 }, { deep: true });
 
 // On component mount, create the style element and initialize CSS variables
 onMounted(() => {
-  styleElement = document.createElement('style');
-  styleElement.type = 'text/css';
-  document.head.appendChild(styleElement);
-  updateCssVariables(designStore.design);
+  stylesheet = document.createElement('style');
+  stylesheet.type = 'text/css';
+  document.head.appendChild(stylesheet);
+  updateStylesheet(designStore.design);
 });
 </script>
