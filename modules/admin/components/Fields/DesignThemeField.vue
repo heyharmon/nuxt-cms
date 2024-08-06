@@ -27,15 +27,22 @@
     <AppModal v-if="open" @close="open = false" :title="`Theme ${theme.name}`" size="md">
       <div class="flex flex-col gap-y-5 p-8">
         <AppInput label="Name" v-model="theme.name"/>
-        <AppInput label="Selector" v-model="theme.selector"/>
+        <DesignColorPicker label="Background" v-model="theme.properties[0].variable" :options="designStore.design.colors"/>
+        <DesignColorPicker label="Pre-title" v-model="theme.properties[1].variable" :options="designStore.design.colors"/>
+        <DesignColorPicker label="Title" v-model="theme.properties[2].variable" :options="designStore.design.colors"/>
       </div>
     </AppModal>
   </div>
 </template>
 
 <script setup>
+import { useDesignStore } from '@/modules/admin/store/designStore'
 import AppInput from '@/modules/admin/components/App/AppInput.vue'
+import AppSelect from '@/modules/admin/components/App/AppSelect.vue'
 import AppModal from '@/modules/admin/components/App/AppModal.vue'
+import DesignColorPicker from '@/modules/admin/components/Fields/DesignColorPicker.vue'
+
+const designStore = useDesignStore()
 
 const props = defineProps({
   theme: Object,

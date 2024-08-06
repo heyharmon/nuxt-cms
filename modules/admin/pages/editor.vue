@@ -120,21 +120,22 @@ const generateStylesheet = (design) => {
   // Output color variables
   let css = ':root {\n';
   design.colors.forEach(color => {
-    css += `  --${color.name}: ${color.hex};\n`;
+    css += `  --${color.label}: ${color.value};\n`;
   });
   css += '}\n';
 
   // Output default theme
   css += `:root {\n`
   design.defaultTheme.properties.forEach(property => {
-    css += `  --${property.name}: var(--${property.value});\n`
+    css += `  --${property.name}: var(--${property.variable});\n`
   })
+  css += '}\n';
 
   // Output themes
   design.themes.forEach(theme => {
     css += `[data-theme="${theme.name}"] {\n`
     theme.properties.forEach(property => {
-      css += `  --${property.name}: var(--${property.value});\n`
+      css += `  --${property.name}: var(--${property.variable});\n`
     })
     css += '}\n'
   })

@@ -11,8 +11,8 @@
 
       <!-- Label & destination -->
       <div class="truncate">
-        <div class="text-xs text-gray-900">{{ color.name }}</div>
-        <div class="mt-1.5 text-xs text-gray-400">{{ color.hex }}</div>
+        <div class="text-xs text-gray-900">{{ color.label }}</div>
+        <div class="mt-1.5 text-xs text-gray-400">{{ color.value }}</div>
       </div>
     </div>
 
@@ -24,10 +24,10 @@
     </div>
 
     <!-- Color editor modal -->
-    <AppModal v-if="open" @close="open = false" :title="`Color ${color.name}`" size="sm">
+    <AppModal v-if="open" @close="open = false" :title="`Color ${color.label}`" size="sm">
       <div class="flex flex-col gap-y-5 p-8">
-        <AppInput label="Name" v-model="color.name"/>
-        <AppInput label="Hex" v-model="color.hex"/>
+        <AppInput label="Name" v-model="color.label"/>
+        <AppInput label="Hex" v-model="color.value"/>
       </div>
     </AppModal>
   </div>

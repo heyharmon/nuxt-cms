@@ -37,8 +37,8 @@
   
   function addNewColor() {
     designStore.design.colors.push({ 
-      name: 'New color', 
-      hex: '' 
+      label: 'New color', 
+      value: '' 
     })
   }
   
