@@ -19,6 +19,7 @@
     "nuxt-icon": "^0.3.3"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.5",
     "@pinia/nuxt": "^0.4.9",
     "@vueuse/nuxt": "^10.6.1",
     "hex-rgb": "^5.0.0",

@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <!-- Pages table -->
+      <!-- Links table -->
       <div class="overflow-x-auto">
         <div class="inline-block min-w-full align-middle">
           <table class="min-w-full divide-y divide-gray-300">
@@ -72,9 +72,10 @@ definePageMeta({
 })
 
 const tabs = [
-  { name: 'All pages', href: '#', current: true },
-  { name: 'Published', href: '#', current: false },
-  { name: 'Unpublished', href: '#', current: false },
+{ name: 'Navbar', href: '#', current: true },
+{ name: 'Footer', href: '#', current: false },
+  // { name: 'Primary area', href: '#', current: true },
+  // { name: 'Secondary area', href: '#', current: false },
 ]
 
 const pages = [

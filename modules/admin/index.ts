@@ -29,6 +29,12 @@ export default defineNuxtModule({
       })
 
       pages.push({
+        name: 'navigation',
+        path: '/admin/navigation',
+        file: resolve(__dirname, './pages/navigation.vue'),
+      })
+
+      pages.push({
         name: 'designer',
         // path: 'admin/designer/:path*',
         path: '/admin/designer',
